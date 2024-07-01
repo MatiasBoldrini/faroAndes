@@ -1,0 +1,63 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta el ancho mínimo y máximo de las columnas */
+    gap: 5px; /* Espacio entre columnas y filas */
+    grid-row-gap: 5px; /* Espacio entre filas */
+    justify-content: center; /* Centra las columnas horizontalmente */
+}
+
+.card {
+    position: relative;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
+    padding-bottom: 100%; /* Establece el aspecto cuadrado (altura igual al ancho) */
+    position: relative; 
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 0;
+    font-family: var(--default-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card img {
+    /* display: block;
+    width: 100%;
+    vertical-align: middle;
+    height: 100%; /* Asegura que la imagen ocupe toda la altura de su contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de su contenedor */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura de su contenedor */
+    object-fit: cover;  
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.3);
+}
+.card-overlay h2{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.card-link {
+    display: block;
+    height: 100%; /* Asegura que el enlace ocupe toda la altura del div */
+}

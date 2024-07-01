@@ -1,0 +1,23 @@
+.textarea {
+	margin-bottom: 4rem;
+	font-size: clamp(16px, 2vw, 24px);
+	padding: 0 5%;
+	font-family: Montserrat;
+	font-weight: 400;
+	letter-spacing: -.05em;
+	color: #4F5A60;
+	text-align: center;
+}
+
+.span-text-reveal {
+	opacity: .001;
+}
+
+#bottom {
+	margin-bottom: 50vh;
+}
+
+.cards-spacer {
+	height: 100% !important;
+	margin-bottom: 30px;
+}
