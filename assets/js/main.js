@@ -885,14 +885,5 @@ function type() {
         }
     }
 }
-LottieInteractivity.create({
-    player:'#player',
-    mode:"cursor",
-    actions: [
-        {
-            type: "pauseHold"
-        }
-    ]
-});
 
 document.addEventListener("DOMContentLoaded", type);
