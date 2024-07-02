@@ -19,7 +19,6 @@
   box-sizing: content-box;
 }
 
-
 .container-hexagon div {
   box-sizing: content-box;
   width: var(--s);
@@ -38,9 +37,11 @@
     0 var(--vc)
   );
   margin-bottom: calc(var(--mv) - var(--vc));
+  
 }
 
 .container-hexagon::before {
+  
   content: "";
   width: calc(var(--s) / 2 + var(--mh));
   float: left;
@@ -80,10 +81,12 @@
 .hex-scale {
   transition: all 0.2s ease; /* Asegurarse de que la transición se aplica a todas las propiedades */
   filter: brightness(100%);
+
 }
 
 .hex-scale:hover {
   transform: rotate(5deg);
+  
   filter: brightness(85%);
 }
 
@@ -148,4 +151,24 @@
   text-align: center;
   margin-top: 0;
   transition: color 0.3s ease; /* Añadido transition */
+}
+
+/* HTML: <div class="hexagon"></div> */
+.hexagon-img-container {
+  width: 60px; /* Ajusta este valor para controlar el tamaño del hexágono */
+  height: calc(60px * 1.1547); /* Ajusta la altura según la relación de aspecto del hexágono */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: #3B8686;
+  overflow: hidden;
+  position: relative;
+}
+
+.hexagon-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+  position: absolute;
+  top: 0;
+  left: 0;
 }

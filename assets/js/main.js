@@ -850,7 +850,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
 
 
-const phrases = ["transformar al mundo?","iluminar el presente?", "dejar que las cosas pasen?", "trascender fronteras?"];
+const phrases = ["transformar al mundo?","iluminar el presente?", "dejar que las cosas pasen?", "vivir sin fronteras?"];
 
 let currentPhraseIndex = 0;
 let currentLetterIndex = 0;
@@ -885,5 +885,14 @@ function type() {
         }
     }
 }
+LottieInteractivity.create({
+    player:'#player',
+    mode:"cursor",
+    actions: [
+        {
+            type: "pauseHold"
+        }
+    ]
+});
 
 document.addEventListener("DOMContentLoaded", type);

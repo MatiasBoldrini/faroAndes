@@ -2959,3 +2959,11 @@ Google map
   color: rgb(116, 239, 255);
   animation: blink 0.3s step-end infinite;
 }
+@media (max-width: 767px) {
+  .column-fix {
+      margin-left: 0 !important;
+  }
+}
+.baige-bg{
+  background-color: #f4f4f4 !important;
+}

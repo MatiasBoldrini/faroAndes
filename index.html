@@ -27,6 +27,8 @@
 	<link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/hexagons-grid.css">
 	<link rel="stylesheet" href="assets/css/cards.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
+	<link rel="stylesheet" href="assets/css/blockquote.css">
 	<link rel="stylesheet" href="assets/css/text_reveal.css">
 
 	<!-- Template specific stylesheets-->
@@ -59,16 +61,20 @@
 		<nav class="navbar  navbar-transparent navbar-custom navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
+
+
 					<button class="navbar-toggle" type="button" data-toggle="collapse"
 						data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span
 							class="icon-bar"></span><span class="icon-bar"></span><span
-							class="icon-bar"></span></button><a class="navbar-brand" href="index.html">FARO andes</a>
+							class="icon-bar"></span></button><a class="navbar-brand" href="index.html#home">
+						<img style="height: 30px; padding-bottom: 5px;" src="assets/extra/logo-faro.png" alt="">
+					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#home">HOME</a></li>
-						<li><a href="#alt-features">EL FARO</a></li>
-						<li><a href="#alt-features">QUÉ BUSCAMOS</a></li>
+						<li><a href="#text-reveal">EL FARO</a></li>
+						<li><a href="#alt-features">EL CAMINO</a></li>
 						<li><a href="#services">LÍNEAS I+D</a></li>
 						<li><a href="#team">TALENTOS</a></li>
 						<li><a href="#news">DESTACADOS</a></li>
@@ -89,17 +95,18 @@
 					<div class="blurred">
 						<div class="font-alt mb-15 titan-title-size-1">¿Podría un faro <span
 								id="typewriter-text"></span> </div>
-						<div style="font-family: 'Montserrat', sans-serif;" class="mb-30 titan-title-size-4">FARO
-							andes</div>
+						<div style="font-family: 'Montserrat', sans-serif;" class="mb-30 titan-title-size-4">
+							<img style="height: 80px;" src="assets/extra/logo-faro.png" alt="">
+						</div>
 						<a class="section-scroll btn btn-border-w btn-round" href="assets/documentos/sci_tech.pdf">Ver
 							mas</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="text-reveal">
+		<section class="module" id="text-reveal">
 
-			<h1 class="module-title font-alt" style="margin-top: 80px;">El Faro</h1>
+			<h1 class="module-title font-alt">El Faro</h1>
 			<div class="container">
 
 				<p class="textarea">Así como aquellas cosas que simplemente suceden cuando dejamos que todo pase, nos
@@ -115,45 +122,51 @@
 			</div>
 		</section>
 		<div class="main">
-			<section class="module" id="alt-features">
+			<section class="module baige-bg" id="alt-features">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6 col-sm-offset-3">
-							<h2 class="module-title font-alt">Nos encontramos buscando</h2>
-							<div class="module-subtitle font-serif">En el faro, es donde los sueños pasan.
-								una idea, un mensaje, una conversación, una pregunta ...
-								hacen que todas las cosas aquí, sean siempre nuevas.
+							<h2 class="module-title font-alt">El Camino
+							</h2>
+							<div class="module-subtitle font-serif">Sabemos que la armonización de los cinco elementos
+								fundamentales — Tierra, Agua, Fuego, Aire y Éter — son guía para innovar hacia un futuro
+								sostenible y próspero.
+
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-6 col-md-3 col-lg-3">
 							<div class="alt-features-item" style="margin-top: 10px !important;">
-								<div class="alt-features-icon"><span class="icon-strategy"></span></div>
+								<div class="alt-features-icon">
+									<i style="color: #228B22;" class="fa-solid fa-earth-americas"></i>
+								</div>
 								<h3 class="alt-features-title font-alt">
-									Catálisis
+									Tierra
 								</h3>
-								Desarrollo de procesos catalíticos para la transformación de recursos
-								Obtención de productos con valor agregado utilizables como soportes para catalizadores.
-							</div>
-							<div class="alt-features-item">
-								<div class="alt-features-icon"><span class="icon-tools-2"></span></div>
-								<h3 class="alt-features-title font-alt">Nuevos Materiales
-								</h3>Creación de materiales con propiedades mejoradas, como mayor resistencia, ligereza,
-								conductividad y biocompatibilidad.
-								Impresión 3D de grandes piezas.
-							</div>
-							<div class="alt-features-item">
-								<div class="alt-features-icon"><span class="icon-target"></span></div>
-								<h3 class="alt-features-title font-alt">Refugios del futuro</h3>
-								Generación de energía a partir de fuentes renovables.
-								Suministro de agua fuera de la red y sistema de reutilización.
-							</div>
+								Investigamos prácticas agrícolas sostenibles, conservación del suelo y gestión de
+								recursos para asegurar un futuro próspero y ambientalmente consciente."
 
+							</div>
+							<div class="alt-features-item">
+								<div class="alt-features-icon"><i style="color: #1E90FF;"
+										class="fa-solid fa-droplet"></i></div>
+								<h3 class="alt-features-title font-alt">Agua
+								</h3>Purificación, gestión eficiente y sostenible. Innovamos en desalinización,
+								reciclaje de agua y protección de ecosistemas acuáticos para garantizar acceso a agua
+								limpia para todos.
+							</div>
+							<div class="alt-features-item">
+								<div class="alt-features-icon"><i style="color: #FFA500;" class="fa-solid fa-fire"></i>
+								</div>
+								<h3 class="alt-features-title font-alt">Fuego</h3>Energía renovable y transformación.
+								Investigamos en energía solar, eólica y geotérmica para reducir nuestra dependencia de
+								los combustibles fósiles y promover un futuro energético sostenible.
+							</div>
 						</div>
 						<div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
 							<div class="alt-services-image align-center">
-								<img src="assets/extra/faroandes_square.jpeg" alt="">
+								<img src="assets/extra/faroandes_square.png" alt="">
 								<!-- <script
 									src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
 									type="module"></script>
@@ -166,19 +179,18 @@
 						</div>
 						<div class="col-sm-6 col-md-3 col-lg-3">
 							<div class="alt-features-item" style="margin-top: 10px !important;">
-								<div class="alt-features-icon"><span class="icon-camera"></span></div>
-								<h3 class="alt-features-title font-alt">Propulsión de sistemas aéreos</h3>Construcción
-								de prototipo de avión y planeador propulsado por hidrógeno de motor eléctrico que volará
-								con hidrógeno líquido, alternativa libre de CO2.
-								Drones solares
+								<div class="alt-features-icon"><i style="color: #313131;" class="fa-solid fa-wind"></i>
+								</div>
+								<h3 class="alt-features-title font-alt">Aire</h3>Calidad del aire, salud y movilidad
+								sostenible. Investigamos la calidad del aire, sus efectos en la salud y desarrollamos
+								sistemas de transporte urbano sostenible para ciudades más saludables y habitables.
 							</div>
 							<div class="alt-features-item">
-								<div class="alt-features-icon"><span class="icon-tools"></span></div>
-								<h3 class="alt-features-title font-alt">Tecnologías alternativas para la generación de
-									hidrógeno</h3>Nueva tecnología que considera la innovación en el uso de nuevos
-								materiales y estrategias para su obtención.
-								Electrólisis avanzada de alta eficiencia.
-
+								<div class="alt-features-icon"><i style="color: #8A2BE2;"
+										class="fa-solid fa-star-of-david"></i></div>
+								<h3 class="alt-features-title font-alt">Eter</h3>Conexión e innovación. Investigamos en
+								inteligencia artificial, comunicación cuántica y exploración espacial para expandir el
+								conocimiento humano y conectar a las personas
 							</div>
 							<!-- <div class="alt-features-item">
                 <div class="alt-features-icon"><span class="icon-mobile"></span></div>
@@ -190,31 +202,20 @@
                 <h3 class="alt-features-title font-alt">Tecnología de nuevas energías</h3>A wonderful serenity has taken possession of my entire
                 soul like these sweet mornings.
               </div> -->
-							<div class="alt-features-item">
-								<div class="alt-features-icon"><span class="icon-basket"></span></div>
-								<h3 class="alt-features-title font-alt">IA aplicada a I+D</h3>Desarrollo de modelos de
-								lenguaje natural precisos.
-								Simulación de procesos industriales con aprendizaje por refuerzo.
-								Visión por computadora, robótica, y aplicaciones de IA en salud, medio ambiente y
-								espiritualidad.
-							</div>
+
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="module bg-dark-60" data-background="assets/extra/incape.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="video-box">
-								<div class="video-box-icon"><a class="video-pop-up"
-										href="https://www.youtube.com/watch?v=xdmYfWCjHNY"><span
-											class="icon-video"></span></a></div>
-								<div class="video-title font-alt">Buscando socios estratégicos</div>
-								<div class="video-subtitle font-alt">Conocé como ser parte de la transformación del
-									mundo</div>
-							</div>
-						</div>
+					<div class="wrapper">
+						<blockquote class="stacked blockquote-principal">
+							<p>
+								Integrando y armonizando estos cinco elementos, nuestro FARO se enfoca en crear un nuevo
+								mundo donde la sostenibilidad, la innovación y la equidad formen una humanidad más
+								saludable y próspera. Nos comprometemos a transitar este camino, inspirados por la
+								sabiduría ancestral y motivados por los desafíos actuales y el despertar de la
+								consciencia.
+							</p>
+						</blockquote>
+
 					</div>
 				</div>
 			</section>
@@ -222,22 +223,23 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6 col-sm-offset-3">
-							<h2 class="module-title font-alt">Lineas de Investigación</h2>
-							<div class="module-subtitle font-serif">Sabemos que algo vamos a encontrar, nos encontramos
-								buscando.
+							<h2 class="module-title font-alt">Nos encontramos buscando</h2>
+							<div class="module-subtitle font-serif">En el faro, es donde los sueños pasan.
+								una idea, un mensaje, una conversación, una pregunta ...
+								hacen que todas las cosas aquí, sean siempre nuevas.
 							</div>
 						</div>
 					</div>
 					<div class="card-container">
-						<a href="tu-enlace-aqui" class="card-link">
+						<a href="catalisis.html" class="card-link">
 							<div class="card">
-								<img src="assets/extra/Lineas_Investigacion/catálisis.jpeg" alt="Card 1">
+								<img src="assets/extra/Lineas_Investigacion/catalisis.jpeg" alt="Card 1">
 								<div class="card-overlay">
 									<h2>Catálisis</h2>
 								</div>
 							</div>
 						</a>
-						<a href="tu-enlace-aqui" class="card-link">
+						<a href="area-nuevos-materiales.html" class="card-link">
 							<div class="card">
 								<img src="assets/extra/Lineas_Investigacion/nuevosmateriales.jpeg" alt="Card 2">
 								<div class="card-overlay">
@@ -245,7 +247,7 @@
 								</div>
 							</div>
 						</a>
-						<a href="tu-enlace-aqui" class="card-link">
+						<a href="viviendas-sustentables.html" class="card-link">
 							<div class="card">
 								<img src="assets/extra/Lineas_Investigacion/refugiosdelfuturo.jpeg" alt="Card 3">
 								<div class="card-overlay">
@@ -253,7 +255,7 @@
 								</div>
 							</div>
 						</a>
-						<a href="tu-enlace-aqui" class="card-link">
+						<a href="energias-alternativas-hidrogeno.html" class="card-link">
 							<div class="card">
 								<img src="assets/extra/Lineas_Investigacion/tecnologíasalternativassparalageneracióndehidrógeno.jpeg"
 									alt="Card 4">
@@ -262,7 +264,7 @@
 								</div>
 							</div>
 						</a>
-						<a href="tu-enlace-aqui" class="card-link">
+						<a href="lanzadores-espaciales.html" class="card-link">
 							<div class="card">
 								<img src="assets/extra/Lineas_Investigacion/propulsióndesistemasaéreos.jpeg"
 									alt="Card 5">
@@ -271,7 +273,7 @@
 								</div>
 							</div>
 						</a>
-						<a href="tu-enlace-aqui" class="card-link">
+						<a href="ingenieria-espacial.html" class="card-link">
 							<div class="card">
 								<img src="assets/extra/Lineas_Investigacion/Solucioneseningenieríaespacial.jpeg"
 									alt="Card 6">
@@ -280,9 +282,9 @@
 								</div>
 							</div>
 						</a>
-						<a href="tu-enlace-aqui" class="card-link">
+						<a href="tecnologia-nuevas-energias.html" class="card-link">
 							<div class="card">
-								<img src="assets/extra/Lineas_Investigacion/tecnologíadenuevasenergías.jpeg"
+								<img src="assets/extra/Lineas_Investigacion/tecnologiadenuevasenergias.jpeg"
 									alt="Card 7">
 								<div class="card-overlay">
 									<h2>Tecnología de nuevas energías</h2>
@@ -291,7 +293,7 @@
 						</a>
 						<a href="tu-enlace-aqui" class="card-link">
 							<div class="card">
-								<img src="assets/extra/Lineas_Investigacion/AI aplicada a i+d.jpeg" alt="Card 8">
+								<img src="assets/extra/Lineas_Investigacion/AI-aplicada.jpeg" alt="Card 8">
 								<div class="card-overlay">
 									<h2>IA aplicada a I+D</h2>
 								</div>
@@ -302,9 +304,93 @@
 
 				</div>
 			</section>
+			<section class="module bg-dark-60" data-background="assets/extra/incape.jpg">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="video-box">
+								<div class="video-box-icon"><a class="video-pop-up"
+										href="https://www.youtube.com/watch?v=xdmYfWCjHNY"><span
+											class="icon-video"></span></a></div>
+								<div class="video-title font-alt">EL FARO DESDE SUS COMIENZOS</div>
+								<div class="video-subtitle font-alt">Conocé como ser parte de la transformación del
+									mundo</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 
 			<hr class="divider-w">
 
+
+			<section class="module" id="team">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3">
+							<h2 class="module-title font-alt">SOBRE EL ENTORNO Y LOS TALENTOS</h2>
+							<div class="module-subtitle font-serif">Talento excepcionales, con corazones de científico</div>
+						</div>
+					</div>
+					<div class="main-hexagon col d-flex mb-5 " style="--r:1.15;--h:0.5;--v:0.25;--s:200px">
+						<div class="container-hexagon ps-5 ">
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Foto-Amurrio.jpg') !important;">
+								<a class=""
+									href="https://softwareom2.wonderware.com/si-directory-ww/SI/search/PartnersSIDetail.asp?CompID=26936"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Foto-Clara-Victoria-Colombo.jpg') !important;">
+								<a class="stretched-link" href="https://www.tech-novation.com/#"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Foto-Gustavo-Daniel-Rosales.jpg') !important;">
+								<a class="stretched-link" href="https://www.tech-novation.com/#"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Foto-Manuela-Perez.jpg') !important;">
+								<a class="stretched-link"
+									href="img/Construyendo un nuevo mundo/Creando un nuevo mundo.pdf"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Foto-Mariano-Chicatun.jpg') !important;">
+								<a class="stretched-link" href="https://www.esss.com/es"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Foto-Portnoy.jpg') !important;">
+								<a class="stretched-link"
+									href="img/Construyendo un nuevo mundo/Creando un nuevo mundo.pdf"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Foto-Spalenza.jpg') !important;">
+								<a class="stretched-link" href="https://www.esss.com/es"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Leonardo-Guse.jpg') !important;">
+								<a class="stretched-link" href="https://www.esss.com/es"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Pedro-Miralles.jpg') !important;">
+								<a class="stretched-link" href="https://www.esss.com/es"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Marcelo-Boldrini.jpeg') !important;">
+								<a class="stretched-link" href="https://www.esss.com/es"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Raúl-Comelli.jpg') !important;">
+								<a class="stretched-link" href="https://www.esss.com/es"></a>
+							</div>
+							<div class="hexagon-element hex-scale"
+								style="background-image: url('assets/extra/Talentos/Roberto-Aquilano.jpeg') !important;">
+								<a class="stretched-link" href="https://www.esss.com/es"></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial"
 				data-background="assets/extra/barco.png">
 				<div class="testimonials-slider pt-140 pb-140">
@@ -359,8 +445,7 @@
 									<div class="col-sm-4 col-sm-offset-4">
 										<div class="testimonial-author">
 											<div class="testimonial-caption font-alt">
-												<div class="testimonial-title">Desconocido</div>
-												<div class="testimonial-descr">El Faro Andes</div>
+												<div class="testimonial-title">FARO andes</div>
 											</div>
 										</div>
 									</div>
@@ -369,74 +454,6 @@
 						</li>
 
 					</ul>
-				</div>
-			</section>
-			<section class="module" id="team">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6 col-sm-offset-3">
-							<h2 class="module-title font-alt">Acerca de los talentos</h2>
-							<div class="module-subtitle font-serif">Talento excepcionales, intuición y percepción
-								extraordinarias</div>
-						</div>
-					</div>
-					<div class="main-hexagon col d-flex mb-5 " style="--r:1.15;--h:0.5;--v:0.25;--s:200px">
-						<div class="container-hexagon ps-5 ">
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Foto-Amurrio.jpg') !important;">
-								<a class=""
-									href="https://softwareom2.wonderware.com/si-directory-ww/SI/search/PartnersSIDetail.asp?CompID=26936"></a>
-							</div>
-							
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Foto-Clara-Victoria-Colombo.jpg') !important;">
-								<a class="stretched-link" href="https://www.tech-novation.com/#"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Foto-Gustavo-Daniel-Rosales.jpg') !important;">
-								<a class="stretched-link" href="https://www.tech-novation.com/#"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Foto-Manuela-Perez.jpg') !important;">
-								<a class="stretched-link"
-									href="img/Construyendo un nuevo mundo/Creando un nuevo mundo.pdf"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Foto-Mariano-Chicatun.jpg') !important;">
-								<a class="stretched-link" href="https://www.esss.com/es"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Foto-Portnoy.jpg') !important;">
-								<a class="stretched-link"
-									href="img/Construyendo un nuevo mundo/Creando un nuevo mundo.pdf"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Foto-Spalenza.jpg') !important;">
-								<a class="stretched-link" href="https://www.esss.com/es"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Leonardo-Guse.jpg') !important;">
-								<a class="stretched-link" href="https://www.esss.com/es"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Pedro-Miralles.jpg') !important;">
-								<a class="stretched-link" href="https://www.esss.com/es"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Marcelo-Boldrini.jpeg') !important;">
-								<a class="stretched-link" href="https://www.esss.com/es"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Raúl-Comelli.jpg') !important;">
-								<a class="stretched-link" href="https://www.esss.com/es"></a>
-							</div>
-							<div class="hexagon-element hex-scale"
-								style="background-image: url('assets/extra/Talentos/Roberto-Aquilano.jpeg') !important;">
-								<a class="stretched-link" href="https://www.esss.com/es"></a>
-							</div>
-							
-						</div>
-					</div>
 				</div>
 			</section>
 			<section class="module" id="news">
@@ -449,25 +466,26 @@
 						</div>
 					</div>
 					<div class="card-container">
-						<a href="https://www.tech-novation.com/back/praxair_zapla.html" class="card-link">
+						<a href="assets/documentos/Faro Andes - La Sabiduria es la luz del mundo.pptx.pdf"
+							class="card-link">
 							<div class="card">
-								<img src="assets/extra/icono_faro.jpeg" alt="Faro andes">
+								<img src="assets/extra/Novedades/faroandes.jpeg" alt="Faro andes">
 								<div class="card-overlay">
 									<h2>Faro andes</h2>
 								</div>
 							</div>
 						</a>
-						<a href="tu-enlace-aqui" class="card-link">
+						<a href="https://www.adetech-industrial.com/es/index.html" class="card-link">
 							<div class="card">
-								<img src="assets/extra/logo_adetech.jpg" alt="Card 2">
+								<img src="assets/extra/Novedades/logo_adetech.jpg" alt="Card 2">
 								<div class="card-overlay">
 									<h2>Adetech</h2>
 								</div>
 							</div>
 						</a>
-						<a href="https://www.tech-novation.com/back/techint_ing.html" class="card-link">
+						<a href="https://www.tech-novation.com/" class="card-link">
 							<div class="card">
-								<img src="assets/extra/technovation_300.webp" alt="Card 3">
+								<img src="assets/extra/Novedades/technovation_300.webp" alt="Card 3">
 								<div class="card-overlay">
 									<h2>tech-novation</h2>
 								</div>
@@ -490,8 +508,35 @@
 								</div>
 							</div>
 						</a>
-
+						<a href="https://www.alpha-editorial.com/Papel/9789587788792/Introducci%C3%B3n+A+La+Ingenier%C3%ADa+Espacial"
+							class="card-link">
+							<div class="card">
+								<img src="assets/extra/Novedades/introduccion-a-la-ingenieria-espacial.png"
+									alt="Card 5">
+								<div class="card-overlay">
+									<h2>introduccion a la ingenieria espacial</h2>
+								</div>
+							</div>
+						</a>
+						<a href="https://labordeeditor.com.ar/shop/y-el-gen-desperto-247013#attr=" class="card-link">
+							<div class="card">
+								<img src="assets/extra/Novedades/el-gen-desperto.jpeg" alt="Card 5">
+								<div class="card-overlay">
+									<h2>Y el gen despertó</h2>
+								</div>
+							</div>
+						</a>
 					</div>
+				</div>
+			</section>
+			<section class="module contacto" id="contact">
+				<div class="container contacto">
+					<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+						type="module"></script>
+
+					<dotlottie-player id="player" src="https://lottie.host/0571cb78-8918-4909-9b6d-dda118e43901/32wmKETOfO.json"
+						background="transparent" speed="0.5" style="width: 300px; height: 300px;" loop
+						autoplay></dotlottie-player>
 				</div>
 			</section>
 
