@@ -2066,6 +2066,8 @@ Google map
 }
 
 .testimonial-caption {
+  font-family: 'Open Sans', sans-serif!important;
+  font-weight: 600;
   text-align: center;
   padding: 10px 0 0;
 }

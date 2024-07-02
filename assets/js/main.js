@@ -349,8 +349,10 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
          * Youtube video background
          /* ---------------------------------------------- */
 
-        $(function(){
-            $(".video-player").mb_YTPlayer();
+         $(function(){
+            $(".video-player").mb_YTPlayer({
+                quality: 'hd1080' // o 'hd720' para 720p
+            });
         });
 
         $('#video-play').click(function(event) {

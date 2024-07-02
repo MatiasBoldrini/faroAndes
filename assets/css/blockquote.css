@@ -21,21 +21,21 @@
     border: solid 2px;
     padding: 20px 30px 20px 30px;
     box-shadow: 13px 13px 0 0 white,
-                15px 15px 0 0 blue,
-                15px 11px 0 0 blue,
-                11px 15px 0 0 blue;
+                15px 15px 0 0 lightgray,
+                15px 11px 0 0 lightgray,
+                11px 15px 0 0 lightgray;
   }
   
   .shadow {
     border: solid 2px;
-    box-shadow: 15px 15px 0 0 blue;
+    box-shadow: 15px 15px 0 0 lightgray;
   }
   
   .rule {
     position: relative;
     left: 7px;
-    background: lighten(blue, 40%);
-    box-shadow: -2px 0 0 blue,
-                -4px 0 0 lighten(blue, 40%),
-                -7px 0 0 blue;
+    background: lighten(lightgray, 40%);
+    box-shadow: -2px 0 0 lightgray,
+                -4px 0 0 lighten(lightgray, 40%),
+                -7px 0 0 lightgray;
   }
