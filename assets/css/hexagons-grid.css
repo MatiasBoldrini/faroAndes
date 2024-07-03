@@ -113,7 +113,7 @@
 
 .hex-scale:hover {
   transform: scale(1.05);
-  /* filter: grayscale(0%); */
+  filter: grayscale(30%);
 }
 
 .hexagon-element {
