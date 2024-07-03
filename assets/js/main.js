@@ -449,7 +449,7 @@
             // Verifica si el elemento target existe en la página
             if ($(target).length) {
                 // Ajusta el scroll para que tenga en cuenta el tamaño del navbar
-                var offset = $(target).offset().top - 100; // Ajusta 100 según el tamaño de tu navbar
+                var offset = $(target).offset().top - 0; // Ajusta 100 según el tamaño de tu navbar
     
                 // Animación de scroll hacia el elemento con el id correspondiente
                 $('html, body').animate({

@@ -55,6 +55,7 @@
 }
 .card-overlay h2{
     font-family: "Montserrat", sans-serif;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;
 }
