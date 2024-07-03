@@ -883,7 +883,7 @@ function type() {
                 type();
             }, 2000); // Pausa de 1 segundo
         } else {
-            setTimeout(type, 100);
+            setTimeout(type, 75);
         }
     }
 }

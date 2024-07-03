@@ -1,3 +1,33 @@
+/* CSS existente */
+
+/* Añadir esta clase para el overlay del nombre */
+.hexagon-overlay {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  backdrop-filter: blur(3px);
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+  color: white;
+  opacity: 0; /* Ocultar por defecto */
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Mostrar el overlay al hacer hover */
+.hexagon-element:hover .hexagon-overlay {
+  opacity: 1;
+}
+
+/* Otros estilos existentes */
 .main-hexagon {
   display: flex;
   --s: 100px; /* tamaño */
@@ -25,7 +55,6 @@
   margin: var(--mv) var(--mh);
   height: calc(var(--s) * var(--r));
   display: inline-flex;
-  font-size: 25px;
   clip-path: polygon(
     var(--hc) 0,
     calc(100% - var(--hc)) 0,
@@ -41,7 +70,6 @@
 }
 
 .container-hexagon::before {
-  
   content: "";
   width: calc(var(--s) / 2 + var(--mh));
   float: left;
@@ -84,10 +112,9 @@
 }
 
 .hex-scale:hover {
-  transform: rotate(5deg);
-  filter: grayscale(0%);
+  transform: scale(1.05);
+  /* filter: grayscale(0%); */
 }
-
 
 .hexagon-element {
   position: relative !important;
