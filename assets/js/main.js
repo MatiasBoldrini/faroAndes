@@ -952,5 +952,13 @@ const images2 = [
       once: true,
       mirror: false
     });}
-
+var viewMode = getCookie("view-mode");
+    if(viewMode === "desktop") {
+        viewport.setAttribute('content', 'width=device-width, initial-scale=1');
+    } else if (viewMode === "mobile") {
+        var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var newWidth = deviceWidth - 1;
+        viewport.setAttribute('content', 'width=' + device-width + ',initial-scale=2');
+    }
+    
 document.addEventListener("DOMContentLoaded", type);
