@@ -1,5 +1,3 @@
-console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55');
-
 /* ---------------------------------------------- /*
  * Preloader
  /* ---------------------------------------------- */
@@ -15,10 +13,10 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
          * WOW Animation When You Scroll
          /* ---------------------------------------------- */
 
-        wow = new WOW({
-            mobile: false
-        });
-        wow.init();
+        // wow = new WOW({
+        //     mobile: false
+        // });
+        // wow.init();
 
 
         /* ---------------------------------------------- /*
@@ -142,11 +140,11 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
          * Rotate
          /* ---------------------------------------------- */
 
-        $(".rotate").textrotator({
-            animation: "dissolve",
-            separator: "|",
-            speed: 3000
-        });
+        // $(".rotate").textrotator({
+        //     animation: "dissolve",
+        //     separator: "|",
+        //     speed: 3000
+        // });
 
 
         /* ---------------------------------------------- /*
@@ -440,7 +438,28 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
             }, 1000);
             e.preventDefault();
         });
-
+        $('.js-scroll-nav').click(function(event) {
+            // Evita el comportamiento predeterminado del navegador de ir directamente al anchor
+            event.preventDefault();
+    
+            // Obtén el href del enlace clickeado y elimina espacios en blanco
+            var href = $(this).attr('href');
+            var target = href.substr(href.indexOf('#'));
+    
+            // Verifica si el elemento target existe en la página
+            if ($(target).length) {
+                // Ajusta el scroll para que tenga en cuenta el tamaño del navbar
+                var offset = $(target).offset().top - 100; // Ajusta 100 según el tamaño de tu navbar
+    
+                // Animación de scroll hacia el elemento con el id correspondiente
+                $('html, body').animate({
+                    scrollTop: offset
+                }, 'slow');
+            } else {
+                console.log('Elemento no encontrado:', target);
+            }
+        });
+        
         /*===============================================================
          Working Contact Form
          ================================================================*/
@@ -952,13 +971,5 @@ const images2 = [
       once: true,
       mirror: false
     });}
-var viewMode = getCookie("view-mode");
-    if(viewMode === "desktop") {
-        viewport.setAttribute('content', 'width=device-width, initial-scale=1');
-    } else if (viewMode === "mobile") {
-        var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        var newWidth = deviceWidth - 1;
-        viewport.setAttribute('content', 'width=' + device-width + ',initial-scale=2');
-    }
     
 document.addEventListener("DOMContentLoaded", type);
