@@ -1272,6 +1272,9 @@ General Styles - Owlcarousel
   font-size: 22px;
   color: #fff;
 }
+.navbar-brand{
+  padding: 8px 15px !important;
+}
 
 .navbar-custom .nav li > a {
   position: relative;
