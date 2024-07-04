@@ -818,6 +818,6 @@ function aosInit() {
     });
 }
 function redirectToEmployee(talentoKey) {
-    // window.location.href = `author.html?talento=${talentoKey}`;
+    window.location.href = `author.html?talento=${talentoKey}`;
 } 
 document.addEventListener("DOMContentLoaded", type);
