@@ -9,7 +9,7 @@ html {
 
 body {
   background: #fff;
-  font: 400 13px/1.8 "Open Sans", sans-serif;
+  font: 400 14px/1.8 "Open Sans", sans-serif;
   color: #666;
   -webkit-font-smoothing: antialiased;
   
@@ -920,7 +920,7 @@ blockquote {
 
 .module-subtitle {
   text-align: center;
-  font-size: 18px;
+  font-size: 19px;
   color: #666;
   margin-bottom: 70px;
 }

@@ -19,7 +19,7 @@ function revealSpans() {
     for (let i = 0; i < spans.length; i++) {
         if (spans[i].parentElement.getBoundingClientRect().top < window.innerHeight ) {
             let { left, top } = spans[i].getBoundingClientRect();
-            top = top - (window.innerHeight *0.7);
+            top = top - (window.innerHeight *0.85);
 
             let opacityValue = 1 - ((top * 0.01) + (left * 0.001));
             opacityValue = opacityValue < 0.1 ? 0.1 : opacityValue > 1 ? 1 : opacityValue.toFixed(3);
