@@ -2,10 +2,11 @@ function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 }
-const employees = {
+
+const talentos = {
     DanielPortnoy: {
         name: 'Daniel Portnoy',
-        areas: ['Espacio'],
+        areas: ['Espacio', 'Otra'],
         position: 'En desarrollo',
         photo: 'assets/extra/Talentos/Daniel-Portnoy.jpg',
         linkedin: 'https://www.linkedin.com/in/daniel-portnoy-8884471/',
@@ -22,37 +23,41 @@ const employees = {
 
     // Agrega más empleados aquí
 };
-
+const areas_investigacion ={
+    Catalisis:{
+        talentos_investigacion: [talentos['Daniel Portnoy'],talentos['Daniel Portnoy']],        
+    },
+};
 function showEmployeeDetail() {
-    const employeeKey = getQueryParam('employee');
-    const employee = employees[employeeKey];
-    console.log(employee);
-    if (employee) {
-        const detailContainer = document.getElementById('employee-detail-container');
+    const talentoKey = getQueryParam('talento');
+    const talento = talentos[talentoKey];
+    console.log(talento);
+    if (talento) {
+        const detailContainer = document.getElementById('talento-detail-container');
         const imageContainer = document.getElementById('author-image-container');
-         imageContainer.innerHTML = `
+        imageContainer.innerHTML = `
         <img style="object-fit: cover;" class="avatar  shadow-xl position-relative z-index-2"
-								src="${employee.photo}" alt="foto_perfil" loading="lazy"></img>
+								src="${talento.photo}" alt="foto_perfil" loading="lazy"></img>
                                 `;
         detailContainer.innerHTML = `
-                <h3 class="mb-0">${employee.name}</h3>
+                <h3 class="mb-0">${talento.name} <a href="${talento.linkedin}">
+                      <i style="color: #0B65C2; margin-left:7px; font-size:25px;" class="fa-brands fa-linkedin"></i>
+                    </a></h3>
 
                 </div>
                 <div class="row mb-4">
                   <div class="col-auto">
-                    <span>${employee.position}</span>
+                    <span>${talento.position}</span>
                   </div>
                   <div class="col-auto">
-                    <span>${employee.areas}</span>
+                    <span>${talento.areas}</span>
                   </div>
                   <div class="col-auto">
-                    <a href="${employee.linkedin}">
-                      <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
+                    
 
                   </div>
                 </div>
-                ${employee.description}
+                ${talento.description}
             `;
     }
 }

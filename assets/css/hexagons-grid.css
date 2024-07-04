@@ -188,7 +188,7 @@
   background: #3B8686;
   overflow: hidden;
   position: relative;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
 }
 
 .hexagon-img-container img {
@@ -199,7 +199,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
 }
 .talentos-button{
   background-color: transparent;
