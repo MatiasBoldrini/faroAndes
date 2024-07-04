@@ -201,3 +201,7 @@
   left: 0;
   transform: rotate(-90deg);
 }
+.talentos-button{
+  background-color: transparent;
+  border: 0px;
+}
