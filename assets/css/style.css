@@ -922,7 +922,7 @@ blockquote {
   text-align: center;
   font-size: 19px;
   color: #666;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .module-icon {
@@ -3024,4 +3024,24 @@ Google map
 .multiple-talentos-item{
   display: flex; 
   align-items: center;
+}
+.me-5{
+  margin-right: 5rem;
+}
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+}
+.whatsapp-float i {
+  margin-top: 16px;
 }

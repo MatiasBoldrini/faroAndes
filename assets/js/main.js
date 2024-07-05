@@ -26,7 +26,9 @@
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
                 $('.scroll-up').fadeIn();
+                $('.whatsapp-float').fadeIn();
             } else {
+                $('.whatsapp-float').fadeOut();
                 $('.scroll-up').fadeOut();
             }
         });

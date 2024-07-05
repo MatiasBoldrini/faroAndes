@@ -49,15 +49,15 @@ const talentos = {
         linkedin: 'https://www.linkedin.com/in/pedro-miralles-070730174/',
         description: '<p class="text-lg mb-0"> Description</p>'
     },
-    MarianoChicatun: {
-        name: 'Mariano Chicatun',
-        areas: [],
+        MarianoChicatun: {
+            name: 'Mariano Chicatun',
+            areas: [],
 
-        photo: 'assets/extra/Talentos/Foto-Mariano-Chicatun.jpg',
-        linkedin: 'https://www.linkedin.com/in/mariano-chicatun/',
-        description: '<p class="text-lg mb-0"> Description</p>'
-    },
-    RobertoAquilano: {
+            photo: 'assets/extra/Talentos/Foto-Mariano-Chicatun.jpg',
+            linkedin: 'https://www.linkedin.com/in/mariano-chicatun/',
+            description: '<p class="text-lg mb-0"> Description</p>'
+        },
+        RobertoAquilano: {
         name: 'Roberto Aquilano',
         areas: [],
 
