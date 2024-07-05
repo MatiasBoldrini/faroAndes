@@ -6,13 +6,15 @@
     justify-content: center; /* Centra las columnas horizontalmente */
 }
 
-.card {
+.card , .card-clientes{
     position: relative;
     border: 1px solid #ccc;
     overflow: hidden;
     width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
     padding-bottom: 100%; /* Establece el aspecto cuadrado (altura igual al ancho) */
     position: relative; 
+    transition: all 0.5s ease;
+
 }
 
 .card-overlay {
@@ -28,7 +30,7 @@
     text-align: center;
 }
 
-.card h2 {
+.card h2 , .card-clientes h2{
     margin: 0;
     font-family: var(--default-font);
     font-size: 1.5rem;
@@ -48,7 +50,23 @@
     object-fit: cover;  
     transition: all 0.5s ease;
 }
-
+.card-clientes img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de su contenedor */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura de su contenedor */
+    object-fit: cover;  
+    transition: all 0.5s ease;
+    filter: grayscale(100%);
+}
+.card-clientes:hover img {
+    transform: scale(1.01);
+    filter: grayscale(10%);
+}
+.card-clientes:hover{
+    transform: scale(1.02);
+}
 .card:hover img {
     transform: scale(1.2);
     filter: brightness(60%);

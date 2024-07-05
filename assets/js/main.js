@@ -751,63 +751,63 @@ function type() {
         }
     }
 }
-const images1 = [
-    "FBLG_ABB_100.jpg",
-    "FBLG_Aceros_100.jpg",
-    "FBLG_AESA_100.jpg",
-    "FBLG_ANDES_DEL_SUR_100.jpg",
-    "FBLG_Arcor_100.jpg",
-    "FBLG_AVA_100.jpg",
-    "FBLG_Axion_100.jpg",
-    "FBLG_baker_100.jpg",
-    "FBLG_Barrick_100.jpg",
-    "FBLG_Boccard_100.jpg",
-    "FBLG_Cementos_100.jpg",
-    "FBLG_Chevron_100.jpg",
-    "FBLG_Colgate_100.jpg",
-    "FBLG_DISTROCUYO_100.jpg",
-    "FBLG_EDEMSA_100.jpg",
-    // Agrega más imágenes aquí según sea necesario
-];
-const images2 = [
-    "FBLG_Gasoducto_100.jpg",
-    "FBLG_Glucovil_100.jpg",
-    "FBLG_Icsa_100.jpg",
-    "FBLG_Irrigacion_100.jpg",
-    "FBLG_Ledesma_100.jpg",
-    "FBLG_PAE_100.jpg",
-    "FBLG_Pampa_100.jpg",
-    "FBLG_Pecom_100.jpg",
-    "FBLG_Petroquimica_100.jpg",
-    "FBLG_Praxair_100.jpg",
-    "FBLG_Rockwell_100.jpg",
-    "FBLG_SENSIA_100.jpg",
-    "FBLG_Techint_100.jpg",
-    "FBLG_Tecna_100.jpg",
-    "FBLG_Tecpetrol_100.jpg",
-    "FBLG_Unilever_100.jpg",
-]
-const container = document.getElementById('imageContainer');
+// const images1 = [
+//     "FBLG_ABB_100.jpg",
+//     "FBLG_Aceros_100.jpg",
+//     "FBLG_AESA_100.jpg",
+//     "FBLG_ANDES_DEL_SUR_100.jpg",
+//     "FBLG_Arcor_100.jpg",
+//     "FBLG_AVA_100.jpg",
+//     "FBLG_Axion_100.jpg",
+//     "FBLG_baker_100.jpg",
+//     "FBLG_Barrick_100.jpg",
+//     "FBLG_Boccard_100.jpg",
+//     "FBLG_Cementos_100.jpg",
+//     "FBLG_Chevron_100.jpg",
+//     "FBLG_Colgate_100.jpg",
+//     "FBLG_DISTROCUYO_100.jpg",
+//     "FBLG_EDEMSA_100.jpg",
+//     // Agrega más imágenes aquí según sea necesario
+// ];
+// const images2 = [
+//     "FBLG_Gasoducto_100.jpg",
+//     "FBLG_Glucovil_100.jpg",
+//     "FBLG_Icsa_100.jpg",
+//     "FBLG_Irrigacion_100.jpg",
+//     "FBLG_Ledesma_100.jpg",
+//     "FBLG_PAE_100.jpg",
+//     "FBLG_Pampa_100.jpg",
+//     "FBLG_Pecom_100.jpg",
+//     "FBLG_Petroquimica_100.jpg",
+//     "FBLG_Praxair_100.jpg",
+//     "FBLG_Rockwell_100.jpg",
+//     "FBLG_SENSIA_100.jpg",
+//     "FBLG_Techint_100.jpg",
+//     "FBLG_Tecna_100.jpg",
+//     "FBLG_Tecpetrol_100.jpg",
+//     "FBLG_Unilever_100.jpg",
+// ]
+// const container = document.getElementById('imageContainer');
 
-images1.forEach((imageName, index) => {
-    const div = document.createElement('div');
-    div.classList.add('scroll-item');
-    const img = document.createElement('img');
-    img.src = `assets/extra/Clients/${imageName}`;
-    img.alt = `Imagen ${index + 1}`;
-    div.appendChild(img);
-    container.appendChild(div);
-});
-const container2 = document.getElementById('imageContainer2');
-images2.forEach((imageName, index) => {
-    const div = document.createElement('div');
-    div.classList.add('scroll-item');
-    const img = document.createElement('img');
-    img.src = `assets/extra/Clients/${imageName}`;
-    img.alt = `Imagen ${index + 1}`;
-    div.appendChild(img);
-    container2.appendChild(div);
-});
+// images1.forEach((imageName, index) => {
+//     const div = document.createElement('div');
+//     div.classList.add('scroll-item');
+//     const img = document.createElement('img');
+//     img.src = `assets/extra/Clients/${imageName}`;
+//     img.alt = `Imagen ${index + 1}`;
+//     div.appendChild(img);
+//     container.appendChild(div);
+// });
+// const container2 = document.getElementById('imageContainer2');
+// images2.forEach((imageName, index) => {
+//     const div = document.createElement('div');
+//     div.classList.add('scroll-item');
+//     const img = document.createElement('img');
+//     img.src = `assets/extra/Clients/${imageName}`;
+//     img.alt = `Imagen ${index + 1}`;
+//     div.appendChild(img);
+//     container2.appendChild(div);
+// });
 
 function aosInit() {
     AOS.init({
