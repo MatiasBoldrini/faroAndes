@@ -3021,3 +3021,7 @@ Google map
     transform: translateX(-400%);
   }
 }
+.multiple-talentos-item{
+  display: flex; 
+  align-items: center;
+}

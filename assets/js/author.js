@@ -50,7 +50,7 @@ const talentos = {
         description: '<p class="text-lg mb-0"> Description</p>'
     },
     MarianoChicatun: {
-        name: 'Mariano Chicatún',
+        name: 'Mariano Chicatun',
         areas: [],
 
         photo: 'assets/extra/Talentos/Foto-Mariano-Chicatun.jpg',
@@ -158,11 +158,11 @@ const areas_investigacion = {
 function showEmployeeDetail() {
     const talentoKey = getQueryParam('talento');
     const talento = talentos[talentoKey];
+    console.log(talento);
     for (let area in areas_investigacion) {
         if (area != 'pageName') {
             const empleados = areas_investigacion[area].talentos_investigacion;
             empleados.forEach(empleado => {
-                console.log(empleado);
                 // Verificar si el empleado existe y tiene la propiedad 'areas'
                 if (empleado.name) {
                     console.log(empleado + ' Asignado a ' + area.talentos_investigacion);
@@ -205,12 +205,55 @@ function showEmployeeDetail() {
 
                 </div>
                 ${talento.description}
+                <button class="mt-5 btn btn-outline-dark mb-0" onclick="history.back()"><i class="me-2 fa-solid fa-arrow-left"></i> Regresar</button>
+
             `;
     }
-}
-function showEmployeeAreas() {
-    
-}
+        }
+        function showEmployeesForCurrentPage() {
+            // Obtener el nombre de la página actual desde la URL
+            const currentPageName = window.location.pathname.split('/').pop().replace('.html', '');
+            areaInvestigacion = null;
+            for (let area in areas_investigacion) {
+                if (areas_investigacion[area].pageName === currentPageName) {
+                    areaInvestigacion = areas_investigacion[area];
+                    break;
+                }
+            }
+        
+            if (areaInvestigacion) {
+                const empleados = areaInvestigacion.talentos_investigacion;
+
+                // Limpiar contenedores de empleados
+                const employeeContainer = document.getElementById('multiple-talentos-container');
+
+                // Generar HTML para cada empleado
+                empleados.forEach(empleado => {
+                    const empleadokey = empleado.name.replace(/\s+/g, ''); // Reemplazar espacios por guiones
+                    employeeContainer.innerHTML += `
+                    <li class="clearfix multiple-talentos-item">
+                        <div class="widget-posts-image">
+                            <div class="hexagon-img-container">
+                                <button onclick="redirectToEmployee('${empleadokey}')">
+                                    <img src="${empleado.photo}" alt="Foto de ${empleado.name}" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="widget-posts-body" style="margin-left: 10px;">
+                            <div class="widget-posts-title font-alt">
+                                ${empleado.name}
+                            </div>
+                        </div>
+                    </li>
+                    `;
+                });
+            } else {
+                console.error(`No se encontró la página correspondiente a '${currentPageName}' en areas_investigacion.`);
+            }
+        }
+
+        // Llamar a la función al cargar la página
+showEmployeesForCurrentPage();
 
 
 showEmployeeDetail();
