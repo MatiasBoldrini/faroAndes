@@ -6,7 +6,7 @@
     justify-content: center; /* Centra las columnas horizontalmente */
 }
 
-.card , .card-clientes{
+.card {
     position: relative;
     border: 1px solid #ccc;
     overflow: hidden;
@@ -14,7 +14,15 @@
     padding-bottom: 100%; /* Establece el aspecto cuadrado (altura igual al ancho) */
     position: relative; 
     transition: all 0.5s ease;
-
+}
+.card-clientes{
+    position: relative;
+    border: 0px;
+    overflow: hidden;
+    width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
+    padding-bottom: 100%; /* Establece el aspecto cuadrado (altura igual al ancho) */
+    position: relative; 
+    transition: all 0.5s ease;
 }
 
 .card-overlay {
@@ -61,8 +69,8 @@
     filter: grayscale(100%);
 }
 .card-clientes:hover img {
-    transform: scale(1.01);
-    filter: grayscale(10%);
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 .card-clientes:hover{
     transform: scale(1.02);
