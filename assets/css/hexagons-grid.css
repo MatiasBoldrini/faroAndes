@@ -194,7 +194,8 @@
 .hexagon-img-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    display: block; /* Asegura que la imagen se comporte como bloque */
+  object-fit: cover;
   object-position: center; /* Centra la imagen dentro del contenedor */
   position: absolute;
   top: 0;
