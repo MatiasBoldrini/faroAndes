@@ -1380,10 +1380,10 @@ General Styles - Owlcarousel
   position: relative;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center !important;
   width: 100%;
   z-index: 0;
-  background-size: cover;
+  background-size: cover !important;
 }
 .titan-title-size-1 {
   letter-spacing: 1px;
