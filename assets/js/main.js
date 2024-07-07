@@ -2,10 +2,10 @@
  * Preloader
  /* ---------------------------------------------- */
 (function () {
-    $(window).on('load', function () {
-        $('.loader').fadeOut();
-        $('.page-loader').delay(350).fadeOut('slow');
-    });
+    // $(window).on('load', function () {
+    //     $('.loader').fadeOut();
+    //     $('.page-loader').delay(350).fadeOut('slow');
+    // });
 
     $(document).ready(function () {
 
@@ -232,6 +232,9 @@
                 $(this).collapse('hide');
             }
         });
+         $("button.navbar-toggle").click(function (e) {
+           $("#navbar-custom").collapse('hide');
+           $("#navbar-custom").removeClass("in"); });
 
 
         /* ---------------------------------------------- /*
@@ -752,6 +755,8 @@ function type() {
             setTimeout(type, 75);
         }
     }
+
+
 }
 // const images1 = [
 //     "FBLG_ABB_100.jpg",
@@ -821,5 +826,5 @@ function aosInit() {
 }
 function redirectToEmployee(talentoKey) {
     window.location.href = `author.html?talento=${talentoKey}`;
-} 
+}
 document.addEventListener("DOMContentLoaded", type);
