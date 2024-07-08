@@ -1,7 +1,7 @@
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 0.85fr));
-    gap: 15px; /* Espacio entre columnas y filas */
+    gap: 5px; /* Espacio entre columnas y filas */
     grid-row-gap: 5px; /* Espacio entre filas */
     justify-content: center; /* Centra las columnas horizontalmente */
 }
@@ -14,6 +14,7 @@
     padding-bottom: 100%; /* Establece el aspecto cuadrado (altura igual al ancho) */
     position: relative; 
     transition: all 0.5s ease;
+    border-radius: 10px;
 }
 .card-clientes{
     position: relative;
