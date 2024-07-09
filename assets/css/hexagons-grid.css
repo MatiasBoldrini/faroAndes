@@ -9,6 +9,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   position: absolute;
   top: -4px;
   left: -4px;
@@ -43,6 +44,14 @@
   --mv: 4px; /* vertical */
   --mh: calc(var(--mv) + (var(--s) - 2 * var(--hc)) / 2); /* horizontal */
   --f: calc(2 * var(--s) * var(--r) + 4 * var(--mv) - 2 * var(--vc) - 2px);
+}
+@supports (-webkit-backdrop-filter: blur(1px)){
+  .main-hexagon {
+    --vc: 0 !important;
+  }
+  .hexagon-element{
+    border-radius: 10px;
+  }
 }
 
 .container-hexagon {

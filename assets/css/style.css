@@ -3031,20 +3031,34 @@ Google map
 .ms-3{
   margin-left: 3rem;
 }
-.whatsapp-float {
+.fav{
   position: fixed;
-  width: 60px;
   height: 60px;
-  bottom: 40px;
+  width: 60px;
   right: 40px;
-  background-color: #25d366;
-  color: #FFF;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
   box-shadow: 2px 2px 3px #999;
   z-index: 1000;
 }
-.whatsapp-float i {
+.whatsapp-float {
+  bottom: 190px;
+  background-color: #25d366;
+  color: #FFF;
+}
+.fav i {
   margin-top: 16px;
+}
+.technovation-float {
+  bottom: 40px;
+  background-color: white;
+}
+.linkedin-float{
+  color: #0B65C2;
+  background-color: white;
+  bottom: 115px;
+}
+.technovation-float img{
+  padding: 10px;
 }

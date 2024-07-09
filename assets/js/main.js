@@ -26,9 +26,11 @@
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
                 $('.scroll-up').fadeIn();
-                $('.whatsapp-float').fadeIn();
+                // $('.whatsapp-float').fadeIn();
+                $('.fav').fadeIn();
             } else {
-                $('.whatsapp-float').fadeOut();
+                // $('.whatsapp-float').fadeOut();
+                $('.fav').fadeOut();
                 $('.scroll-up').fadeOut();
             }
         });
