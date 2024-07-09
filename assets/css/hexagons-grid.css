@@ -50,6 +50,8 @@
     --vc: 0 !important;
   }
   .hexagon-element{
+    margin: var(--mv) 5px !important;
+    margin-bottom: 8px !important;
     border-radius: 10px;
   }
 }
