@@ -7,10 +7,9 @@ const talentos = {
     DanielPortnoy: {
         name: 'Daniel Portnoy',
         areas: [],
-
         photo: 'assets/extra/Talentos/Daniel-Portnoy.jpg',
         linkedin: 'https://www.linkedin.com/in/daniel-portnoy-8884471/',
-        description: '<p class="text-lg mb-0"> Description</p>'
+        description: '<p class="text-lg mb-0">Doctor y Máster en Astrofísica e Ingeniero Aeroespacial. Obtuve mis títulos en el Instituto Tecnológico de Israel, <strong>Technion</strong>. Luego de terminar mis estudios académicos, desarrollé sistemas aviónicos computados para la Fuerza Aérea Israelí y continúo siendo consultor para el Gobierno de Israel en distintos proyectos de defensa, como el sistema de defensa contra misiles balísticos <strong>Arrow</strong>. Desde hace más de 25 años soy consultor y trabajo activamente en el desarrollo del programa espacial israelí. Además, difundí en distintos congresos de América Latina los logros más destacados de este programa.</p><p class="text-lg mb-0">Desde hace 15 años soy educador tecnológico de alumnos de escuela secundaria, utilizando al espacio y los satélites como plataforma educativa, liderando un grupo de profesionales de distintas disciplinas, mentores en el proyecto <strong>Dujifat</strong> y <strong>Tevel</strong>, en el cual alumnos de escuelas secundarias desarrollan e integran nanosatélites con fines educacionales. Estas actividades se realizan en el Centro de Ciencias Herzliya (ciudad que queda en el centro de Israel) y los distintos colegios que fueron elegidos para estos programas.</p><p class="text-lg mb-0">En la actualidad soy profesor externo de la Universidad de Tel Aviv, donde enseño varios cursos: “<strong>Introducción a la Ingeniería Espacial</strong>”, “<strong>Mecánica de Órbitas de Satélites</strong>”, “<strong>Control Angular de los Satélites</strong>”.</p><p class="text-lg mb-0">Estar en el <strong>Faro Andes</strong> significa para mí varias cosas: volverme a conectar tecnológicamente con el país donde nací, ser parte de un grupo de excelentes profesionales y líderes tecnológicos y tener la posibilidad de desarrollar proyectos de vanguardia tecnológica.</p>'
     },
     LeonardoAmurrio: {
         name: 'Leonardo Amurrio',

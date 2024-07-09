@@ -3025,8 +3025,11 @@ Google map
   display: flex; 
   align-items: center;
 }
-.me-5{
-  margin-right: 5rem;
+.me-3{
+  margin-right: 3rem;
+}
+.ms-3{
+  margin-left: 3rem;
 }
 .whatsapp-float {
   position: fixed;
