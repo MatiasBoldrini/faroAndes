@@ -188,22 +188,31 @@ function showEmployeeDetail() {
                 </div>
                 <div class="row mb-4">
                   <div class="col-auto">
-                    ${Object.keys(areas_investigacion).map(area => {
+                  ${(() => {
+                    let result = Object.keys(areas_investigacion).map(area => {
                         // Verificar si el área está asignada al empleado
                         if (areas_investigacion[area].talentos_investigacion.includes(talento)) {
-                            return `
+                            let htmlString = `
                                 <a href="${areas_investigacion[area].pageName}.html">
-                                    <span>${area}</span>
+                                    <span>${area} y </span>
                                 </a>
                             `;
+                            return htmlString;
                         }
                         return ''; // Si el área no está asignada, retorna una cadena vacía
-                    }).join('')}
+                    }).join('');
+            
+                    // Eliminar la última " y " del resultado
+                    result = result.replace(/ y <\/span>(?=\s*<\/a>\s*$)/, '</span>');
+            
+                    // Retornar el resultado modificado
+                    return result;
+                })()}
                 </div>
 
                 </div>
                 ${talento.description}
-                <button class="mt-5 btn btn-outline-dark mb-0" onclick="history.back()"><i class="me-2 fa-solid fa-arrow-left"></i> Regresar</button>
+                <button class="mt-2 btn btn-outline-dark mb-0" onclick="history.back()"><i class="me-2 fa-solid fa-arrow-left"></i> Regresar</button>
 
             `;
     }
