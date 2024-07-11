@@ -154,6 +154,12 @@ const areas_investigacion = {
             talentos['SebastianSpalenza']
         ],
         pageName: 'viviendas-sustentables',
+    },
+    'Desarrollo de oportunindades': {
+        talentos_investigacion: [
+            talentos['MarceloBoldrini'],
+        ],
+        pageName: 'index',
     }
 };
 function showEmployeeDetail() {
