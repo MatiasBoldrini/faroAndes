@@ -113,6 +113,7 @@ const areas_investigacion = {
     },
     'AI aplicada a I+D': {
         talentos_investigacion: [
+            talentos['MauricioMiranda'],
             talentos['MarianoChicatun'],
         ],
         pageName: 'AI-Inv-Desarrollo',
@@ -125,6 +126,8 @@ const areas_investigacion = {
     },
     'Tecnologías Alternativas para la Generación de Hidrógeno': {
         talentos_investigacion: [
+            talentos['RaulComelli'],
+            talentos['LeonardoGuse'],
             talentos['SebastianSpalenza'],
             talentos['PedroMiralles'],
             talentos['LeonardoAmurrio'],
@@ -138,7 +141,7 @@ const areas_investigacion = {
         ],
         pageName: 'tecnologia-nuevas-energias',
     },
-    'Lanzadores Espaciales': {
+    'Planeador y avión propulsado por hidrógeno': {
         talentos_investigacion: [
             talentos['CoquiPace']
         ],
@@ -146,7 +149,7 @@ const areas_investigacion = {
     },
     'Viviendas Sustentables': {
         talentos_investigacion: [
-            // talentos['ClaraColombo'],
+            talentos['VictoriaColombo'],
             talentos['ManuelaPerez'],
             talentos['SebastianSpalenza']
         ],

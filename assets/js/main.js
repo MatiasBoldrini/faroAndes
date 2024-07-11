@@ -455,8 +455,15 @@
 
             // Verifica si el elemento target existe en la página
             if ($(target).length) {
+                if(target === '#origen'){
+                    var offset = $(target).offset().top - 50; // Ajusta 100 según el tamaño de tu navbar
+                }else if(target === '#conecta-tu-talento'){
+                    var offset = $(target).offset().top + 90; // Ajusta 100 según el tamaño de tu navbar
+                }
+                else{
+                    var offset = $(target).offset().top + 75; // Ajusta 100 según el tamaño de tu navbar
+                }
                 // Ajusta el scroll para que tenga en cuenta el tamaño del navbar
-                var offset = $(target).offset().top - 0; // Ajusta 100 según el tamaño de tu navbar
 
                 // Animación de scroll hacia el elemento con el id correspondiente
                 $('html, body').animate({
