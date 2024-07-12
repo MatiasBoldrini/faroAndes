@@ -2881,9 +2881,10 @@ Google map
     margin: 0 0 30px;
   }
   .alt-features-item {
+    
     padding-left: 0;
     margin: 0 0 30px;
-    text-align: center;
+    text-align: justify;
   }
   .alt-features-icon {
     position: static;

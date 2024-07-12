@@ -836,4 +836,48 @@ function aosInit() {
 function redirectToEmployee(talentoKey) {
     window.location.href = `author.html?talento=${talentoKey}`;
 }
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+	effect: 'coverflow',
+	grabCursor: false,
+	centeredSlides: true,
+	slidesPerView: '2',
+	// coverflowEffect: {
+	//   rotate: 50,
+	//   stretch: 0,
+	//   depth: 100,
+	//   modifier: 1,
+	//   slideShadows : true,
+	// },
+	
+	coverflowEffect: {
+        rotate: 5,
+        stretch: 10,
+        depth: 50,
+        modifier: 10,
+        slideShadows : true,
+	  },
+	  
+  });
+  
+  
+var galleryTop = new Swiper('.swiper-container.testimonial', {
+	speed: 400,
+	spaceBetween: 50,
+	autoplay: {
+	  delay: 10000,
+	  disableOnInteraction: false,
+	},
+	direction: 'vertical',
+	pagination: {
+	  clickable: true,
+	  el: '.swiper-pagination',
+	  type: 'bullets',
+	},
+	thumbs: {
+		swiper: galleryThumbs
+	  }
+  });
+  
+
+
 document.addEventListener("DOMContentLoaded", type);
