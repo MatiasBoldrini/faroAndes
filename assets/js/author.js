@@ -9,7 +9,7 @@ const talentos = {
         areas: [],
         photo: 'assets/extra/Talentos/Ruben-Juarez.jpeg',
         linkedin: 'https://www.linkedin.com/in/rub%C3%A9n-ju%C3%A1rez-d%C2%B4%C3%A1mbola-769044155/',
-        description: '<p class="text-lg mb-0">Buscar ser faro es entenderse como lo más alto, cómo el que guía y dirige, el que marca el destino y la meta a seguir. Encargarse de su arquitectura es una responsabilidad también muy alta, que implica un esfuerzo creativo profundo y serio, a la vez suelto, libre y originalísimo.</p><p class="text-lg mb-0">Siempre la idea de este elemento formal tan relevante, ha estado vinculada a la de la luz, la visibilidad desde los puntos más lejanos y la tranquilidad que implica para los viajeros de toda la historia el haber llegado a destino o el saber cómo hacerlo.</p><p class="text-lg mb-0">Nuestra historia de hoy no es muy distinta. Necesitamos también de esas marcas en el cielo y en la tierra que nos indiquen qué hacer y cómo hacerlo.</p>  <p class="text-lg mb-0">Un Centro de Investigación es un hito lúcido y concentrado espacialmente que alberga a profesionales que miran más allá.</p> <p class="text-lg mb-0">Desde un lugar privilegiado y que tienda a lo trascendente, con esa perspectiva única y total, ellos estarán en condiciones de encender la necesaria luz que pueda guiar y acompañar.</p><p class="text-lg mb-0">El compromiso de generar la idea espacial correcta para contener esta actividad tan específica y tan especial, fue tan desafiante como arduo y atractivo.</p><p class="text-lg mb-0">Qué mejor que recurrir a las relaciones de medidas y formas que ya están presentes en la misma actividad creadora que lo generó todo, la denominada proporción áurea.</p><p class="text-lg mb-0">Aplicamos a partir de ella y su expresión móvil, una relación ascendente y vertical entre el centro de la tierra y el cielo, dos universos en proceso de conocimiento. De tal modo unimos el objeto de la investigación en una línea que sube y baja fluida y continuamente, tomando y llevando información. Es ésta una saeta que nace como un elemento físico, para desmaterializarse y transformarse en un rasgo de pura luz. Por esa razón puede subir sin límites para poder ser observada también sin límites.</p><p class="text-lg mb-0">Desde este eje de rotación se desprende lógicamente y de modo centrífugo una fuerza que genera otros puntos de más luz. Estos se materializan en semi esferas translúcidas que albergan distintos ámbitos para diversas ciencias que formarán parte del sistema de la investigación en cuestión. Estos domos podrán multiplicarse en la misma medida en que la ciencia busque y encuentre nuevos caminos.</p><p class="text-lg mb-0">Equipos de profesionales aplicados al trabajo menos visible, pero más inteligente y necesario. Movimiento ascendente y centrífugo en medio del silencio del entorno perfecto. Nuestra montaña mendocina expectante y testigo. Todos abajo dispuestos y atentos para seguir los pasos de cada nuevo descubrimiento. Cada uno en su puesto. El Estudio Juárez D Ambola Arquitectos, como responsable de ponerle piel, forma, funcionalidad, belleza y materialidad apropiada, ya ha comenzado y seguirá trabajando en dar los pasos que sean necesarios para dar con el más ajustado y correcto proyecto arquitectónico para una objetivo tan sublime.</p><p class="text-lg mb-0">Queda más que claro que para nosotros, como Estudio de Arquitectura seleccionado, la encomienda de una tarea profesional de esta envergadura nos distingue, nos enorgullece, nos posiciona y nos alienta a continuar en el sentido y la dirección elegida desde hace más de 40 años: Ofrecer al comitente los modos más creativos y factibles que permitan resolver formal y funcionalmente el ámbito que necesita para desarrollar su actividad.</p>'
+        description: '<p class="text-lg mb-0">Buscar ser <strong>faro</strong> es entenderse como lo más alto, cómo el que guía y dirige, el que marca el destino y la meta a seguir. Encargarse de su <strong>arquitectura</strong> es una responsabilidad también muy alta, que implica un esfuerzo creativo profundo y serio, a la vez suelto, libre y originalísimo.</p><p class="text-lg mb-0">Siempre la idea de este elemento formal tan relevante, ha estado vinculada a la de la <strong>luz</strong>, la visibilidad desde los puntos más lejanos y la tranquilidad que implica para los viajeros de toda la historia el haber llegado a <strong>destino</strong> o el saber cómo hacerlo.</p><p class="text-lg mb-0">Nuestra historia de hoy no es muy distinta. Necesitamos también de esas <strong>marcas</strong> en el cielo y en la tierra que nos indiquen qué hacer y cómo hacerlo.</p>  <p class="text-lg mb-0">Un <strong>Centro de Investigación</strong> es un hito lúcido y concentrado espacialmente que alberga a profesionales que miran más allá.</p> <p class="text-lg mb-0">Desde un lugar <strong>privilegiado</strong> y que tienda a lo <strong>trascendente</strong>, con esa perspectiva única y total, ellos estarán en condiciones de encender la necesaria luz que pueda guiar y acompañar.</p><p class="text-lg mb-0">El compromiso de generar la idea espacial correcta para contener esta actividad tan específica y tan especial, fue tan desafiante como arduo y atractivo.</p><p class="text-lg mb-0">Qué mejor que recurrir a las relaciones de medidas y formas que ya están presentes en la misma actividad creadora que lo generó todo, la denominada <strong>proporción áurea</strong>.</p><p class="text-lg mb-0">Aplicamos a partir de ella y su expresión móvil, una relación ascendente y vertical entre el centro de la <strong>tierra</strong> y el <strong>cielo</strong>, dos universos en proceso de conocimiento. De tal modo unimos el objeto de la investigación en una línea que sube y baja fluida y continuamente, tomando y llevando <strong>información</strong>. Es ésta una <strong>saeta</strong> que nace como un elemento físico, para desmaterializarse y transformarse en un rasgo de pura luz. Por esa razón puede subir sin límites para poder ser observada también sin límites.</p><p class="text-lg mb-0">Desde este eje de rotación se desprende lógicamente y de modo centrífugo una fuerza que genera otros puntos de más luz. Estos se materializan en semi esferas translúcidas que albergan distintos ámbitos para diversas ciencias que formarán parte del sistema de la investigación en cuestión. Estos domos podrán multiplicarse en la misma medida en que la <strong>ciencia</strong> busque y encuentre nuevos caminos.</p><p class="text-lg mb-0">Equipos de <strong>profesionales</strong> aplicados al trabajo menos visible, pero más inteligente y necesario. Movimiento ascendente y centrífugo en medio del silencio del entorno perfecto. Nuestra montaña mendocina expectante y testigo. Todos abajo dispuestos y atentos para seguir los pasos de cada nuevo descubrimiento. Cada uno en su puesto. El Estudio Juárez D Ambola Arquitectos, como responsable de ponerle piel, forma, funcionalidad, belleza y materialidad apropiada, ya ha comenzado y seguirá trabajando en dar los pasos que sean necesarios para dar con el más ajustado y correcto proyecto arquitectónico para una objetivo tan sublime.</p><p class="text-lg mb-0">Queda más que claro que para nosotros, como Estudio de Arquitectura seleccionado, la encomienda de una tarea profesional de esta envergadura nos distingue, nos enorgullece, nos posiciona y nos alienta a continuar en el sentido y la dirección elegida desde hace más de 40 años: Ofrecer al comitente los modos más creativos y factibles que permitan resolver formal y funcionalmente el ámbito que necesita para desarrollar su actividad.</p>'
     },
     DanielPortnoy: {
         name: 'Daniel Portnoy',
@@ -37,7 +37,8 @@ const talentos = {
         areas: [],
         photo: 'assets/extra/Talentos/Marcelo-Boldrini.jpeg',
         linkedin: 'https://www.linkedin.com/in/marmatbol/',
-        description: '<p class="text-lg mb-0">Desde niño sentí el entusiasmo e interés de participar en un gran centro de investigaciones como la <strong>NASA</strong>, algo de lo que podríamos llamar “un gran sueño”.</p><p class="text-lg mb-0">Estudié, investigué y me preparé en muy diversos temas o áreas de conocimiento. Tuve la oportunidad de experimentar el desarrollo y creación de nuevos ambientes de lo que denominamos: “trabajo”, “empresas”, “negocios” y de participar en proyectos con cierta complejidad y envergadura, en un mercado muy amplio, lleno de lo que la mente etiqueta como adversidades, crisis, éxitos, etc…</p><p class="text-lg mb-0">El diseño, la tecnología y el anhelo de cruzar fronteras, siempre estuvo presente en cada plan estratégico, de negocios, de misión y visión, de objetivos, etc.</p><p class="text-lg mb-0">Luego de un arduo e intenso proceso de introspección, que aún persiste y quizás sea para siempre, fui desprendiéndome de las leyes y artes del mundo empresarial, desaprendiendo premisas técnicas como planes, estrategias, metas, objetivos y ambiciones que nos encadenan al futuro. Todo se desvanece y aparece, imponente, en un estado de gran atracción y presencia: <strong>EL FARO.</strong></p><p class="text-lg mb-0">Como en una vista en perspectiva de todo lo ocurrido, podría decir que solo observo y dejo que todo pase.</p><p class="text-lg mb-0">Hoy, FARO andes es y vive! Es ahí donde <strong>soy y estoy</strong></p>'    },
+        description: '<p class="text-lg mb-0">Desde niño sentí el entusiasmo e interés de participar en un gran centro de investigaciones como la <strong>NASA</strong>, algo de lo que podríamos llamar “un gran sueño”.</p><p class="text-lg mb-0">Estudié, investigué y me preparé en muy diversos temas o áreas de conocimiento. Tuve la oportunidad de experimentar el desarrollo y creación de nuevos ambientes de lo que denominamos: “trabajo”, “empresas”, “negocios” y de participar en proyectos con cierta complejidad y envergadura, en un mercado muy amplio, lleno de lo que la mente etiqueta como adversidades, crisis, éxitos, etc…</p><p class="text-lg mb-0">El diseño, la tecnología y el anhelo de cruzar fronteras, siempre estuvo presente en cada plan estratégico, de negocios, de misión y visión, de objetivos, etc.</p><p class="text-lg mb-0">Luego de un arduo e intenso proceso de introspección, que aún persiste y quizás sea para siempre, fui desprendiéndome de las leyes y artes del mundo empresarial, desaprendiendo premisas técnicas como planes, estrategias, metas, objetivos y ambiciones que nos encadenan al futuro. Todo se desvanece y aparece, imponente, en un estado de gran atracción y presencia: <strong>EL FARO.</strong></p><p class="text-lg mb-0">Como en una vista en perspectiva de todo lo ocurrido, podría decir que solo observo y dejo que todo pase.</p><p class="text-lg mb-0">Hoy, FARO andes es y vive! Es ahí donde <strong>soy y estoy</strong></p>'
+    },
     SebastianSpalenza: {
         name: 'Sebastian Spalenza',
         areas: [],
@@ -54,15 +55,15 @@ const talentos = {
         linkedin: 'https://www.linkedin.com/in/pedro-miralles-070730174/',
         description: '<p class="text-lg mb-0"> Description</p>'
     },
-        MarianoChicatun: {
-            name: 'Mariano Chicatun',
-            areas: [],
+    MarianoChicatun: {
+        name: 'Mariano Chicatun',
+        areas: [],
 
-            photo: 'assets/extra/Talentos/Foto-Mariano-Chicatun.jpg',
-            linkedin: 'https://www.linkedin.com/in/mariano-chicatun/',
-            description: '<p class="text-lg mb-0"> Description</p>'
-        },
-        RobertoAquilano: {
+        photo: 'assets/extra/Talentos/Foto-Mariano-Chicatun.jpg',
+        linkedin: 'https://www.linkedin.com/in/mariano-chicatun/',
+        description: '<p class="text-lg mb-0"> Description</p>'
+    },
+    RobertoAquilano: {
         name: 'Roberto Aquilano',
         areas: [],
 
@@ -166,7 +167,13 @@ const areas_investigacion = {
             talentos['MarceloBoldrini'],
         ],
         pageName: 'index',
-    }
+    },
+    'Estudio de arquitectura': {
+        talentos_investigacion: [
+            talentos['RubenJuarez'],
+        ],
+        pageName: 'https://juarezdambola.com/',
+    },
 };
 function showEmployeeDetail() {
     const talentoKey = getQueryParam('talento');
@@ -204,25 +211,38 @@ function showEmployeeDetail() {
                 <div class="row mb-4">
                   <div class="col-auto">
                   ${(() => {
-                    let result = Object.keys(areas_investigacion).map(area => {
-                        // Verificar si el área está asignada al empleado
-                        if (areas_investigacion[area].talentos_investigacion.includes(talento)) {
-                            let htmlString = `
-                                <a href="${areas_investigacion[area].pageName}.html">
-                                    <span>${area} y </span>
+                let result = Object.keys(areas_investigacion).map(area => {
+                    // Verificar si el área está asignada al empleado
+                    if (areas_investigacion[area].talentos_investigacion.includes(talento)) {
+                        let htmlString;
+                        console.log(areas_investigacion[area].pageName);
+                        if (areas_investigacion[area].pageName.includes('.')) {
+                            htmlString = `
+                                <a target="_blank" href="${areas_investigacion[area].pageName}">
+                                    <span>${area} <i style="font-size:12px" class="fa-solid fa-arrow-up-right-from-square"></i> y </span>
                                 </a>
                             `;
-                            return htmlString;
+                                                } else {
+                                                    htmlString = `
+                                <a href="${areas_investigacion[area].pageName}.html">
+                                    <span>${area} <i style="font-size:12px" class="fa-solid fa-arrow-up-right-from-square"></i> y </span>
+                                </a>
+                            `;
                         }
-                        return ''; // Si el área no está asignada, retorna una cadena vacía
-                    }).join('');
-            
-                    // Eliminar la última " y " del resultado
-                    result = result.replace(/ y <\/span>(?=\s*<\/a>\s*$)/, '</span>');
-            
-                    // Retornar el resultado modificado
-                    return result;
-                })()}
+
+                        return htmlString;
+
+                        return htmlString;
+                    }
+                    return ''; // Si el área no está asignada, retorna una cadena vacía
+                }).join('');
+
+                // Eliminar la última " y " del resultado
+                result = result.replace(/ y <\/span>(?=\s*<\/a>\s*$)/, '</span>');
+
+                // Retornar el resultado modificado
+                return result;
+            })()}
                 </div>
 
                 </div>
@@ -231,28 +251,28 @@ function showEmployeeDetail() {
 
             `;
     }
+}
+function showEmployeesForCurrentPage() {
+    // Obtener el nombre de la página actual desde la URL
+    const currentPageName = window.location.pathname.split('/').pop().replace('.html', '');
+    areaInvestigacion = null;
+    for (let area in areas_investigacion) {
+        if (areas_investigacion[area].pageName === currentPageName) {
+            areaInvestigacion = areas_investigacion[area];
+            break;
         }
-        function showEmployeesForCurrentPage() {
-            // Obtener el nombre de la página actual desde la URL
-            const currentPageName = window.location.pathname.split('/').pop().replace('.html', '');
-            areaInvestigacion = null;
-            for (let area in areas_investigacion) {
-                if (areas_investigacion[area].pageName === currentPageName) {
-                    areaInvestigacion = areas_investigacion[area];
-                    break;
-                }
-            }
-        
-            if (areaInvestigacion) {
-                const empleados = areaInvestigacion.talentos_investigacion;
+    }
 
-                // Limpiar contenedores de empleados
-                const employeeContainer = document.getElementById('multiple-talentos-container');
+    if (areaInvestigacion) {
+        const empleados = areaInvestigacion.talentos_investigacion;
 
-                // Generar HTML para cada empleado
-                empleados.forEach(empleado => {
-                    const empleadokey = empleado.name.replace(/\s+/g, ''); // Reemplazar espacios por guiones
-                    employeeContainer.innerHTML += `
+        // Limpiar contenedores de empleados
+        const employeeContainer = document.getElementById('multiple-talentos-container');
+
+        // Generar HTML para cada empleado
+        empleados.forEach(empleado => {
+            const empleadokey = empleado.name.replace(/\s+/g, ''); // Reemplazar espacios por guiones
+            employeeContainer.innerHTML += `
                     <li class="clearfix multiple-talentos-item">
                         <div class="widget-posts-image">
                             <div class="hexagon-img-container">
@@ -268,13 +288,13 @@ function showEmployeeDetail() {
                         </div>
                     </li>
                     `;
-                });
-            } else {
-                console.error(`No se encontró la página correspondiente a '${currentPageName}' en areas_investigacion.`);
-            }
-        }
+        });
+    } else {
+        console.error(`No se encontró la página correspondiente a '${currentPageName}' en areas_investigacion.`);
+    }
+}
 
-        // Llamar a la función al cargar la página
+// Llamar a la función al cargar la página
 showEmployeesForCurrentPage();
 
 

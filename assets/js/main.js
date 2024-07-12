@@ -850,7 +850,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
         stretch: 1,
         depth: 40,
         modifier: 10,
-        slideShadows : true,
+        slideShadows : false,
 	  },
       watchSlidesVisibility: false,
       watchSlidesProgress: true,
