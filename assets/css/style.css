@@ -3049,21 +3049,26 @@ Google map
   margin-top: 12px;
 }
 .whatsapp-float {
-  bottom: 160px;
+  bottom: 220px;
   background-color: #25d366;
   color: #FFF;
 }
 .linkedin-float{
-  bottom: 100px;
+  bottom: 160px;
   color: #0B65C2;
   background-color: white;
 }
 .technovation-float {
-  bottom: 40px;
+  bottom: 100px;
   background-color: white;
 }
-.technovation-float img{
+.technovation-float img, .adetech-float img{
   padding: 10px;
+}
+.adetech-float{
+  bottom: 40px;
+  background-color: white;
+
 }
 .flag-icon{
   height: 15px;

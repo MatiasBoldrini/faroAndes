@@ -838,25 +838,22 @@ function redirectToEmployee(talentoKey) {
 }
 var galleryThumbs = new Swiper('.gallery-thumbs', {
 	effect: 'coverflow',
-	grabCursor: false,
+	grabCursor: true,
 	centeredSlides: true,
 	slidesPerView: '2',
-	// coverflowEffect: {
-	//   rotate: 50,
-	//   stretch: 0,
-	//   depth: 100,
-	//   modifier: 1,
-	//   slideShadows : true,
-	// },
-	
+    mousewheel: {
+        enabled: true,
+        releaseOnEdges: true,
+      },
 	coverflowEffect: {
-        rotate: 5,
-        stretch: 10,
-        depth: 50,
+        rotate: 3,
+        stretch: 1,
+        depth: 40,
         modifier: 10,
         slideShadows : true,
 	  },
-	  
+      watchSlidesVisibility: false,
+      watchSlidesProgress: true,
   });
   
   
@@ -875,8 +872,17 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
 	},
 	thumbs: {
 		swiper: galleryThumbs
-	  }
-  });
+	  },
+      touchReleaseOnEdges: true,
+      
+
+  });galleryTop.on('slideChangeTransitionStart', function() {
+    galleryThumbs.slideTo(galleryTop.activeIndex);
+});
+
+galleryThumbs.on('slideChangeTransitionStart', function() {
+    galleryTop.slideTo(galleryThumbs.activeIndex);
+});
   
 
 
