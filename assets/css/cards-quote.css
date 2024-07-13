@@ -201,8 +201,9 @@
 }
 
 .testimonial-section .quote p {
-	overflow: hidden;
-	max-height: 370px;
+	/* overflow: hidden;
+	max-height: 370px; */
+	/* height: ; */
 	font-size: 19px!important;
 	font-family: 'Montserrat';
 	font-weight: 400;

@@ -27,48 +27,50 @@
 		
 		-->
 	<!-- Default stylesheets-->
-	<link rel="preload" href="assets/extra/faro.webp" as="image">
-	<link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="preload" href="assets/extra/faro.webp" as="image"> -->
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RW31JP20XQ"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'G-RW31JP20XQ');
+		var img = new Image();
+
+		// Set the source of the image to preload
+		img.src = 'assets/extra/faro.webp';
+
+		// Once the image is loaded, display the section
+		img.onload = function () {
+			document.getElementById('home').style.backgroundImage = "url('assets/extra/faro.webp')";
+		};
 	</script>
+
+	<link rel="apple-touch-icon" href="assets/extra/Logos/faroandes_square_icon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/extra/Logos/faroandes_square_icon.ico" type="image/x-icon" />
 	<!-- End Google Analytics -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- FONTS -->
+	<!-- Custom css -->
+	<link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Volkhov:400i&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/text_reveal.css">
 	<link rel="stylesheet" href="assets/css/cards-quote.css">
 	<link rel="stylesheet" href="assets/css/hexagons-grid.css">
 	<link rel="stylesheet" href="assets/css/cards.css">
 	<link rel="stylesheet" href="assets/css/blockquote.css">
-	<link rel="stylesheet" href="assets/css/text_reveal.css">
-	<link rel="apple-touch-icon" href="assets/extra/Logos/faroandes_square_icon.ico" type="image/x-icon">
-	<link rel="icon" href="assets/extra/Logos/faroandes_square_icon.ico" type="image/x-icon" />
-
-	<!-- Template specific stylesheets-->
 	<link rel="stylesheet" href="assets/lib/swiper/swiper.min.css">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+	<link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+	<!-- <link href="assets/lib/animate.css/animate.css" rel="stylesheet"> -->
 	<link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
 	<link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
-	<!-- <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet"> -->
-	<!-- <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet"> -->
-	<link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-	<!-- <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet"> -->
-	<!-- Main stylesheet and color file-->
-	<link href="assets/css/style.css" rel="stylesheet">
 	<link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
 </head>
 
@@ -109,7 +111,7 @@
 				</div>
 			</div>
 		</nav>
-		<section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/extra/faro.webp">
+		<section class="home-section home-full-height bg-dark-30" id="home">
 			<div class="video-player"
 				data-property="{videoURL:'https://youtu.be/4WiVomeumS4', containment:'.home-section', startAt:18, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, useNoCookie:false, useOnMobile:true}  ">
 			</div>
@@ -148,7 +150,7 @@
 				<p class="textarea">Faro andes, la sabiduría es LUZ para el nuevo mundo.</p>
 			</div>
 		</section>
-		<section class="module bg-dark-60" id="origen" data-background="assets/extra/Faro-inicios.webp">
+		<section class="module bg-dark-60" id="origen" style="background-image: url('assets/extra/Faro-inicios.webp');">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
@@ -174,7 +176,10 @@
 								<img class="u1" src="assets/extra/Tarjetas-Frases/marcelo-boldrini-card.webp" alt="">
 							</div>
 							<div class="swiper-slide">
-								<img class="u2" src="assets/extra/Tarjetas-Frases/ruben-juarez-card.jpeg" alt="">
+								<img class="u2" src="assets/extra/Tarjetas-Frases/Roberto-Aquilano-card.jpeg" alt="">
+							</div>
+							<div class="swiper-slide">
+								<img class="u3" src="assets/extra/Tarjetas-Frases/ruben-juarez-card.jpeg" alt="">
 							</div>
 
 
@@ -198,6 +203,24 @@
 										desaf&iacute;os y acontecimientos.</p>
 									<p><strong>¡Bienvenidos!</strong></p>
 									<div class="name">-Marcelo Boldrini-
+									</div>
+
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="quote">
+									<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+									<p>En un mundo marcado por desafíos incesantes y cambios vertiginosos, la ciencia
+										emerge como un faro de esperanza que ilumina el camino hacia un futuro más
+										brillante y sostenible.</p>
+
+									<p>La ciencia y la tecnología son los pilares sobre los que podemos construirlo, y
+										aprovechando nuestras fortalezas y potenciando nuestras capacidades, podemos no
+										solo enfrentar los desafíos del presente sino también abrir nuevas oportunidades
+										para las generaciones futuras.</p>
+									<p>Inspirándonos en Julio Verne, y soñando un poco, esperamos que el Faro Andes nos
+										ilumine el camino.</p>
+									<div class="name">-Roberto Aquilano-
 									</div>
 
 								</div>
@@ -275,17 +298,9 @@
 
 
 					</div>
-					<div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
-						<div class="alt-services-image align-center">
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="alt-services-image align-center hidden-xs hidden-sm">
 							<img style="border-radius: 10px;" src="assets/extra/faroandes_square.webp" alt="">
-							<!-- <script
-									src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-									type="module"></script>
-
-								<dotlottie-player
-									src="https://lottie.host/7c07110b-4be9-47dd-b8af-3f05936fce3e/40fPaqrI3B.json"
-									background="transparent" speed="1" style="width: 550px; height: 550px;" loop
-									autoplay></dotlottie-player> -->
 						</div>
 						<div class="alt-features-item" style="text-align: justify;">
 							<div class="alt-features-icon"><i style="color: #8A2BE2;" class="fa-solid fa-star"></i>
@@ -310,19 +325,6 @@
 							Investigamos en energía solar, eólica y geotérmica para reducir nuestra dependencia de
 							los combustibles fósiles y promover un futuro energético sostenible.
 						</div>
-
-
-						<!-- <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-mobile"></span></div>
-                <h3 class="alt-features-title font-alt">Soluciones ingeniería espacial</h3>A wonderful serenity has taken possession of my
-                entire soul like these sweet mornings.
-              </div> -->
-						<!-- <div class="alt-features-item">
-                <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
-                <h3 class="alt-features-title font-alt">Tecnología de nuevas energías</h3>A wonderful serenity has taken possession of my entire
-                soul like these sweet mornings.
-              </div> -->
-
 					</div>
 				</div>
 				<div class="wrapper">
@@ -434,98 +436,99 @@
 
 			</div>
 		</section>
-		<section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/extra/barco.webp">
-			<div class="testimonials-slider pt-140 pb-140">
-				<ul class="slides">
-					<li>
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-12">
-									<div class="module-icon"><span class="icon-quote"></span></div>
-								</div>
+		<section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial"
+			style="background-image: url('assets/extra/barco.webp');"">
+			<div class=" testimonials-slider pt-140 pb-140">
+			<ul class="slides">
+				<li>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="module-icon"><span class="icon-quote"></span></div>
 							</div>
-							<div class="row">
-								<div class="col-sm-8 col-sm-offset-2">
-									<blockquote class="testimonial-text font-alt">SOLO HACE FALTA UNA PEQUEÑA
-										PERTURBACIÓN DE UN AGENTE EXTERNO PARA QUE CAMBIE LA VIDA PARA SIEMPRE
+						</div>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<blockquote class="testimonial-text font-alt">SOLO HACE FALTA UNA PEQUEÑA
+									PERTURBACIÓN DE UN AGENTE EXTERNO PARA QUE CAMBIE LA VIDA PARA SIEMPRE
 
-										.</blockquote>
+									.</blockquote>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4">
+								<div class="testimonial-author">
+									<div class="testimonial-caption font-alt">
+										ROBERTO AQUILANO
+										<div class="testimonial-title"></div>
+										<div class="testimonial-descr">
+											Y EL GEN DESPERTÓ (2023). LABORDE EDITOR. ARGENTINA</div>
+									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-sm-4 col-sm-offset-4">
-									<div class="testimonial-author">
-										<div class="testimonial-caption font-alt">
-											ROBERTO AQUILANO
-											<div class="testimonial-title"></div>
-											<div class="testimonial-descr">
-												Y EL GEN DESPERTÓ (2023). LABORDE EDITOR. ARGENTINA</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="module-icon"><span class="icon-quote"></span></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<blockquote class="testimonial-text font-alt">EN EL FARO, ES DONDE LOS SUEÑOS
+									PASAN.
+									UNA IDEA, UN MENSAJE DE TEXTO, UNA CONVERSACIÓN, UNA PREGUNTA ...
+									HACEN QUE TODAS LAS COSAS AQUÍ PASEN Y SEAN SIEMPRE NUEVAS
+								</blockquote>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4">
+								<div class="testimonial-author">
+									<div class="testimonial-caption font-alt">
+										FARO andes
+										<div class="testimonial-title"></div>
+										<div class="testimonial-descr">
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</li>
-					<li>
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-12">
-									<div class="module-icon"><span class="icon-quote"></span></div>
-								</div>
+					</div>
+				</li>
+				<li>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="module-icon"><span class="icon-quote"></span></div>
 							</div>
-							<div class="row">
-								<div class="col-sm-8 col-sm-offset-2">
-									<blockquote class="testimonial-text font-alt">EN EL FARO, ES DONDE LOS SUEÑOS
-										PASAN.
-										UNA IDEA, UN MENSAJE DE TEXTO, UNA CONVERSACIÓN, UNA PREGUNTA ...
-										HACEN QUE TODAS LAS COSAS AQUÍ PASEN Y SEAN SIEMPRE NUEVAS
-									</blockquote>
-								</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<blockquote class="testimonial-text font-alt">Lo importante es no dejar de
+									hacerse preguntas.
+								</blockquote>
 							</div>
-							<div class="row">
-								<div class="col-sm-4 col-sm-offset-4">
-									<div class="testimonial-author">
-										<div class="testimonial-caption font-alt">
-											FARO andes
-											<div class="testimonial-title"></div>
-											<div class="testimonial-descr">
-											</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-4">
+								<div class="testimonial-author">
+									<div class="testimonial-caption font-alt">
+										Albert Einstein
+										<div class="testimonial-title"></div>
+										<div class="testimonial-descr">
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</li>
-					<li>
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-12">
-									<div class="module-icon"><span class="icon-quote"></span></div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-8 col-sm-offset-2">
-									<blockquote class="testimonial-text font-alt">Lo importante es no dejar de
-										hacerse preguntas.
-									</blockquote>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-4 col-sm-offset-4">
-									<div class="testimonial-author">
-										<div class="testimonial-caption font-alt">
-											Albert Einstein
-											<div class="testimonial-title"></div>
-											<div class="testimonial-descr">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
+					</div>
+				</li>
 
-				</ul>
+			</ul>
 			</div>
 		</section>
 
@@ -656,7 +659,8 @@
 		<section class="module" style="padding-bottom: 0px!important;" id="conecta-tu-talento">
 			<section class="module pt-0 pb-0" id="about">
 				<div class="row position-relative m-0">
-					<div class="col-xs-12 col-md-6 side-image" data-background="assets/extra/pluton.webp"></div>
+					<div class="col-xs-12 col-md-6 side-image"
+						style="background-image: url('assets/extra/pluton.webp');"></div>
 					<div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
 						<div class="row">
 							<div class="col-sm-12">
@@ -870,10 +874,10 @@
     =============================================
     -->
 
-	<script src="assets/lib/swiper/swiper.min.js"></script>
 	<script src="assets/lib/jquery/dist/jquery.js"></script>
-	<script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+	<script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/lib/swiper/swiper.min.js"></script>
 	<!-- <script src="assets/lib/wow/dist/wow.js"></script> -->
 	<script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
 	<script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>

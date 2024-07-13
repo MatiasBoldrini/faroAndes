@@ -163,10 +163,10 @@
   text-align: center;
 }
 
-.blurred {
+/* .blurred {
   backdrop-filter: blur(1px);
   background-color: #00000010;
-}
+} */
 
 .text a {
   justify-content: center;
