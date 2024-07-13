@@ -864,7 +864,8 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
 	  delay: 10000,
 	  disableOnInteraction: false,
 	},
-	direction: 'vertical',
+    grabCursor: true,
+	direction: 'horizontal',
 	pagination: {
 	  clickable: true,
 	  el: '.swiper-pagination',

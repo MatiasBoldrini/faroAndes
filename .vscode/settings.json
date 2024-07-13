@@ -1,0 +1,8 @@
+{
+    "html-to-css-autocompletion.folderNamesToBeIncluded": [
+        "css",
+        "js",
+        "assets/js",
+        "assets/css"
+    ]
+}

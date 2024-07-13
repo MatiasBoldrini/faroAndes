@@ -236,12 +236,13 @@
 @media (max-width: 768px) {
 	.testimonial-section {
 		flex-direction: column; /* Cambia a apilado vertical en dispositivos móviles */
-	}
+	}	
 	.gallery-thumbs .swiper-slide{
 		width: 250px !important; /* Haz que las imágenes ocupen el 100% del ancho en móviles */
 		height: 400px !important; /* Haz que las imágenes ocupen el 100% del ancho en móviles */
 	}
 	.testi-user-img, .user-saying {
+		margin-top: 0px !important;
 		width: 100% !important; /* Haz que los divs ocupen el 100% del ancho en móviles */
 		text-align: center; /* Alinea el contenido al centro */
 	}
@@ -250,6 +251,6 @@
 		padding: 20px; /* Ajusta el padding si es necesario */
 	}
 	.camino{
-		padding-left: 5px!important;
+		padding-left: 0px!important;
 	}
 }
