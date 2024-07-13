@@ -840,16 +840,20 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 	effect: 'coverflow',
 	grabCursor: true,
 	centeredSlides: true,
-	slidesPerView: '2',
+	// slidesPerView: '3',
+    slidesPerView: 'auto',
+    longSwipesMs:3000,
+    // loop: true,
+    // loopedSlides: 1,
     mousewheel: {
         enabled: true,
         releaseOnEdges: true,
       },
 	coverflowEffect: {
-        rotate: 3,
-        stretch: 1,
-        depth: 40,
-        modifier: 10,
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
         slideShadows : false,
 	  },
       watchSlidesVisibility: false,
@@ -877,11 +881,11 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
       touchReleaseOnEdges: true,
       
 
-  });galleryTop.on('slideChangeTransitionStart', function() {
+  });galleryTop.on('slideChange', function() {
     galleryThumbs.slideTo(galleryTop.activeIndex);
 });
 
-galleryThumbs.on('slideChangeTransitionStart', function() {
+galleryThumbs.on('slideChange', function() {
     galleryTop.slideTo(galleryThumbs.activeIndex);
 });
   
