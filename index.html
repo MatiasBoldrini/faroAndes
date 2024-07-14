@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 	<meta name="description"
 		content="FARO andes es un centro de investigación y desarrollo que busca crear un futuro sostenible e innovador, integrando los cinco elementos fundamentales: Tierra, Agua, Fuego, Aire y Éter.">
 	<meta name="keywords" content="investigacion, faro andes, technovation, adetech, marcelo boldrini">
@@ -20,16 +20,18 @@
 
 
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#da532c">
 	<link rel="apple-touch-icon" sizes="180x180" href="/assets/extra/Logos/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/extra/Logos/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/extra/Logos/favicon-16x16.png">
 	<link rel="manifest" href="/assets/extra/Logos/site.webmanifest">
-	<link rel="mask-icon" href="/assets/extra/Logos/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="/assets/extra/Logos/favicon.ico">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-config" content="/assets/extra/Logos/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.faroandes.com/">
+	<meta property="og:site_name" content="FARO andes">
+	<meta property="og:title" content="FARO andes">
+	<meta property="og:description" content="FARO andes es un centro de investigación y desarrollo que busca crear un futuro sostenible e innovador, integrando los cinco elementos fundamentales: Tierra, Agua, Fuego, Aire y Éter.">
+	<meta property="og:image" itemprop="image" content="assets/extra/Logos/android-chrome-512x512.png">  
 	<!--  
 		Stylesheets
 		=============================================
@@ -63,7 +65,8 @@
 	<link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Volkhov:400i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
@@ -134,8 +137,8 @@
 							<img style="height: 70px;" src="assets/extra/Logos/Faro-fin-del-mundo-home.png" alt="">
 						</div>
 						<a class="section-scroll btn btn-border-w btn-round"
-							href="assets/documentos/Lo-importante-es-no-dejar-de-hacerse-preguntas.pdf">Ver
-							mas</a>
+							href="assets/documentos/Lo-importante-es-no-dejar-de-hacerse-preguntas.pdf">Ver mas
+						</a>
 					</div>
 				</div>
 			</div>
@@ -176,7 +179,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="spacer" style="padding-top: 50px;">
+		<section class="spacer" style="padding-top: 50px; background-color: #F4F4F4;">
 			<div class=" testimonial-section">
 				<div class="testi-user-img">
 					<div class="swiper-container gallery-thumbs">
@@ -207,7 +210,7 @@
 							<div class="swiper-slide">
 								<div class="quote">
 									<div class="quote-wrapper">
-										<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+										<span class="icon-quote quote-icon"></span>
 										<p>Estamos en presencia de comienzos de una nueva era, en donde ciencia,
 											innovaci&oacute;n, tecnolog&iacute;a y confort, ser&aacute;n integrados a
 											estados de profunda paz, libertad, sabidur&iacute;a y amor: &ldquo;la
@@ -225,8 +228,7 @@
 							<div class="swiper-slide">
 								<div class="quote">
 									<div class="quote-wrapper">
-
-										<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+										<span class="icon-quote quote-icon"></span>
 										<p>En un mundo marcado por desafíos incesantes y cambios vertiginosos, la
 											ciencia
 											emerge como un faro de esperanza que ilumina el camino hacia un futuro más
@@ -252,8 +254,7 @@
 							<div class="swiper-slide">
 								<div class="quote">
 									<div class="quote-wrapper">
-
-										<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+										<span class="icon-quote quote-icon"></span>
 										<p>
 											Buscar ser faro es entenderse como lo más alto, cómo el que guía y dirige,
 											el
@@ -265,8 +266,10 @@
 										</p>
 									</div>
 									<div class="name-container" style="justify-content: space-between;">
-										<a class="link" onclick="redirectToEmployee('RubenJuarez')" >Leer más <i style="margin-left: 5px;" class="fa-solid fa-circle-chevron-right"></i></a>
-										<span class="name">-Roberto Aquilano-</span>
+										<a class="link btn btn-w btn-circle" onclick="redirectToEmployee('RubenJuarez')">Leer más <i
+												style="margin-left: 5px;"
+												class="fa-solid fa-chevron-right"></i></a>
+										<span class="name">-Rubén Juárez-</span>
 									</div>
 								</div>
 							</div>
@@ -303,7 +306,7 @@
 				<div class="row">
 					<div class="col-sm-6 col-md-3 col-lg-3">
 
-						<div class="alt-features-item" style="text-align: justify;margin-top: 10px !important;">
+						<div class="alt-features-item" style="margin-top: 10px !important;">
 							<div class="alt-features-icon">
 								<i style="color: #228B22;" class="fa-solid fa-earth-americas"></i>
 							</div>
@@ -314,7 +317,7 @@
 							recursos para asegurar un futuro próspero y ambientalmente consciente.
 
 						</div>
-						<div class="alt-features-item" style="text-align: justify;">
+						<div class="alt-features-item" >
 							<div class="alt-features-icon"><i style="color: #1E90FF;" class="fa-solid fa-droplet"></i>
 							</div>
 							<h3 class="alt-features-title font-alt">Agua
@@ -329,7 +332,7 @@
 						<div class="alt-services-image align-center hidden-xs hidden-sm">
 							<img style="border-radius: 10px;" src="assets/extra/faroandes_square.webp" alt="">
 						</div>
-						<div class="alt-features-item" style="text-align: justify;">
+						<div class="alt-features-item" >
 							<div class="alt-features-icon"><i style="color: #8A2BE2;" class="fa-solid fa-star"></i>
 							</div>
 							<h3 class="alt-features-title font-alt">Eter</h3>Conexión e innovación. Investigamos en
@@ -338,7 +341,7 @@
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-3 col-lg-3">
-						<div class="alt-features-item" style="text-align: justify;margin-top: 10px !important;">
+						<div class="alt-features-item" style="margin-top: 10px !important;">
 							<div class="alt-features-icon"><i style="color: #313131;" class="fa-solid fa-wind"></i>
 							</div>
 							<h3 class="alt-features-title font-alt">Aire</h3>Calidad del aire, salud y movilidad
@@ -776,7 +779,7 @@
 						<div class="card">
 							<img loading="lazy" src="assets/extra/Novedades/arabidopsis.webp" alt="Card 5">
 							<div class="card-overlay">
-								<h2>Arabidopsis</h2>
+								<h2>Experimentos y avances en Biología Espacial</h2>
 							</div>
 						</div>
 					</a>
