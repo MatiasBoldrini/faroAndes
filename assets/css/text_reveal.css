@@ -10,7 +10,12 @@
 }
 
 .span-text-reveal {
-	opacity: .001;
+	opacity: 1;
+	white-space: pre;
+	/* padding: 5px; */
+	/* transform: skewX(25deg);  */
+	display: inline-block;
+	transition: transform 0.1s ease; /* Transición suave de la inclinación */
 }
 
 #bottom {
