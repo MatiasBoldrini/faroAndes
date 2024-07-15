@@ -30,8 +30,7 @@ function revealSpans() {
             opacityValue = opacityValue < 0.1 ? 0.1 : opacityValue > 1 ? 1 : opacityValue.toFixed(3);
             
             // Calculate skew angle based on opacity
-            let skewAngle = 70 - (opacityValue * 70); // Linear interpolation from 25° to 0°
-            
+            let skewAngle = 90 - (opacityValue * 90); // Linear interpolation from 25° to 0°
             // Apply opacity and skew transformation
             span.style.opacity = opacityValue;
             span.style.transform = `skewX(${skewAngle}deg)`;

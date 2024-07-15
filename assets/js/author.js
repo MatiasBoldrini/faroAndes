@@ -5,7 +5,7 @@ function getQueryParam(param) {
 
 const talentos = {
     RubenJuarez: {
-        name: 'Rubén Juárez',
+        name: "Rubén Juárez D' Ámbola",
         areas: [],
         photo: 'assets/extra/Talentos/Ruben-Juarez.jpeg',
         linkedin: 'https://www.linkedin.com/in/rub%C3%A9n-ju%C3%A1rez-d%C2%B4%C3%A1mbola-769044155/',
@@ -74,10 +74,9 @@ const talentos = {
     VictoriaColombo: {
         name: 'Victoria Colombo',
         areas: [],
-
-        photo: 'assets/extra/Talentos/Foto-Clara-Victoria-Colombo.jpg',
+        photo: 'assets/extra/Talentos/Victoria-Colombo.webp',
         linkedin: 'https://www.linkedin.com/in/victoria-colombo-531ab71b2',
-        description: '<p class="text-lg mb-0"> Description</p>'
+        description: '<p class="text-lg mb-0">Mi nombre es Clara Victoria Colombo, soy <strong>Licenciada en Biotecnología</strong> y <strong>Doctora en Ciencias Biológicas</strong>. Estudié en la <strong>Universidad Nacional de Rosario</strong>, realizando mis investigaciones en el Centro de Biología Molecular y Celular de Rosario (IBR), en biología molecular de proteínas de plantas.</p><p class="text-lg mb-0">Luego comencé una búsqueda hacia las ciencias aplicadas y me especialicé en <strong>energías renovables</strong>, la gestión adecuada de residuos orgánicos y la generación de Biogás. Participé en muchos proyectos de diferentes escalas y con diferentes objetivos, aprendiendo mucho en el proceso. Experimenté la potencia del trabajo con comunidades. Al mismo tiempo descubrí mi pasión por la <strong>docencia universitaria</strong>, que actualmente ejerzo en la Universidad de Ciencia Agrarias y en el Instituto Politécnico Superior.</p><p class="text-lg mb-0">Este camino me llevó a repensar las viviendas y las ciudades, la forma en que vivimos y cómo viviremos en un mundo que nos desafía con cambios constantes. Sueño con construir un mundo donde podamos vivir en armonía con el ambiente, y el <strong>faro</strong> es el lugar donde esto se hace realidad.</p><p class="text-lg mb-0">Siento un gran amor y respeto por todos los seres vivos y por la naturaleza. Soy muy curiosa y vivo en una constante búsqueda de respuestas. Esta búsqueda me llevó a encontrar este grandioso grupo de personas, con el que comparto las ganas de construir, innovar y descubrir nuevas maneras de vivir. Estoy agradecida de pertenecer al faro, que sin dudas será una luz que nos guíe hacia un mejor futuro.</p>'
     },
     LeonardoGuse: {
         name: 'Leonardo Guse',
@@ -154,7 +153,7 @@ const areas_investigacion = {
         ],
         pageName: 'lanzadores-espaciales',
     },
-    'Viviendas Sustentables': {
+    'Refugios del futuro': {
         talentos_investigacion: [
             talentos['VictoriaColombo'],
             talentos['ManuelaPerez'],

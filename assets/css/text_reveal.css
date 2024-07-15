@@ -8,14 +8,16 @@
 	color: #4F5A60;
 	text-align: center;
 }
-
+.textarea-container{
+	overflow: hidden;
+}
 .span-text-reveal {
 	opacity: 1;
 	white-space: pre;
 	/* padding: 5px; */
 	/* transform: skewX(25deg);  */
 	display: inline-block;
-	transition: transform 0.1s ease; /* Transición suave de la inclinación */
+	transition: transform 0.01s ease; /* Transición suave de la inclinación */
 }
 
 #bottom {
