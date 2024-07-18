@@ -46,15 +46,6 @@
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'G-RW31JP20XQ');
-		var img = new Image();
-
-		// Set the source of the image to preload
-		img.src = 'assets/extra/faro.webp';
-
-		// Once the image is loaded, display the section
-		img.onload = function () {
-			document.getElementById('home').style.backgroundImage = "url('assets/extra/faro.webp')";
-		};
 	</script>
 
 	<!-- End Google Analytics -->
@@ -124,17 +115,17 @@
 				</div>
 			</div>
 		</nav>
-		<section class="home-section home-full-height bg-dark-30" id="home">
+		<section class="home-section bg-dark-30" id="home" style="height: 100vh;background-image: url('assets/extra/faro.webp');">
 			<div class="video-player"
-				data-property="{videoURL:'https://youtu.be/4WiVomeumS4', containment:'.home-section', startAt:18, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, useNoCookie:false, useOnMobile:true}  ">
+				data-property="{videoURL:'https://youtu.be/4WiVomeumS4', containment:'.home-section', startAt:18, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, useOnMobile:true, playOnlyIfVisible: true}  ">
 			</div>
 			<div class="titan-caption">
 				<div class="caption-content">
-					<div class="blurred">
+					<div class="blurred" >
 						<div class="font-alt titan-title-size-1" style="margin-bottom: 14px;">¿Podría un faro <span
 								id="typewriter-text"></span> </div>
 						<div style="font-family: 'Montserrat', sans-serif;" class="mb-30 titan-title-size-4">
-							<img style="height: 70px;" src="assets/extra/Logos/Faro-fin-del-mundo-home.png" alt="">
+							<img style="height: 70px;" width="auto" src="assets/extra/Logos/Faro-fin-del-mundo-home.png" alt="">
 						</div>
 						<a class="section-scroll btn btn-border-w btn-round"
 							href="assets/documentos/Lo-importante-es-no-dejar-de-hacerse-preguntas.pdf">Ver mas
@@ -697,7 +688,7 @@
 								<h2 class="module-title font-alt align-left">Ser del nuevo mundo</h2>
 								<div class="module-subtitle font-serif align-left" style="margin-bottom: 20px;">
 									¿Con corazón de científico? ¿Inspirado en la investigación y el
-									descrubrimiento de nuevas tecnologías?</div>
+									descubrimiento de nuevas tecnologías?</div>
 								<p>¿Imaginaste alguna vez poder desplegar libremente tu talento?
 									Nuestro proceso de vinculación de talentos es constante, por eso te pedimos que
 									completes el siguiente formulario para mantener tu información actualizada en
@@ -762,7 +753,7 @@
 							<img loading="lazy" src="assets/extra/Novedades/introduccion-a-la-ingenieria-espacial.webp"
 								alt="Card 5">
 							<div class="card-overlay">
-								<h2>introduccion a la ingenieria espacial</h2>
+								<h2>Introducción a la ingeniería espacial</h2>
 							</div>
 						</div>
 					</a>

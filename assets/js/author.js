@@ -177,14 +177,13 @@ const areas_investigacion = {
 function showEmployeeDetail() {
     const talentoKey = getQueryParam('talento');
     const talento = talentos[talentoKey];
-    console.log(talento);
     for (let area in areas_investigacion) {
         if (area != 'pageName') {
             const empleados = areas_investigacion[area].talentos_investigacion;
             empleados.forEach(empleado => {
                 // Verificar si el empleado existe y tiene la propiedad 'areas'
                 if (empleado.name) {
-                    console.log(empleado + ' Asignado a ' + area.talentos_investigacion);
+
                     // Agregar el área al empleado
                     empleado.areas.push(area);
                 } else {
@@ -197,6 +196,21 @@ function showEmployeeDetail() {
     if (talento) {
         const detailContainer = document.getElementById('talento-detail-container');
         const imageContainer = document.getElementById('author-image-container');
+        const photoWithPng = talento.photo.replace(/\.[^/.]+$/, ".png").replace("assets/extra/Talentos/","");
+        const fullPhotoUrl = `https://faroandes.sirv.com/Images/${photoWithPng}`;
+        
+        // Crear y añadir la meta etiqueta og:image
+        const metaImage = document.createElement('meta');
+        metaImage.setAttribute('property', 'og:image');
+        metaImage.setAttribute('content', fullPhotoUrl);
+        document.getElementsByTagName('head')[0].appendChild(metaImage);
+        
+        // Crear y añadir la meta etiqueta og:title
+        const metaTitle = document.createElement('meta');
+        metaTitle.setAttribute('property', 'og:title');
+        metaTitle.setAttribute('content', talento.name);
+
+        document.getElementsByTagName('head')[0].appendChild(metaTitle);
         imageContainer.innerHTML = `
         <img style="object-fit: cover;" class="avatar  shadow-xl position-relative z-index-2"
 								src="${talento.photo}" alt="foto_perfil" loading="lazy"></img>
@@ -214,22 +228,20 @@ function showEmployeeDetail() {
                     // Verificar si el área está asignada al empleado
                     if (areas_investigacion[area].talentos_investigacion.includes(talento)) {
                         let htmlString;
-                        console.log(areas_investigacion[area].pageName);
+
                         if (areas_investigacion[area].pageName.includes('.')) {
                             htmlString = `
                                 <a target="_blank" href="${areas_investigacion[area].pageName}">
                                     <span>${area} <i style="font-size:12px" class="fa-solid fa-arrow-up-right-from-square"></i> y </span>
                                 </a>
                             `;
-                                                } else {
-                                                    htmlString = `
+                        } else {
+                            htmlString = `
                                 <a href="${areas_investigacion[area].pageName}.html">
                                     <span>${area} <i style="font-size:12px" class="fa-solid fa-arrow-up-right-from-square"></i> y </span>
                                 </a>
                             `;
                         }
-
-                        return htmlString;
 
                         return htmlString;
                     }
@@ -292,7 +304,6 @@ function showEmployeesForCurrentPage() {
         console.error(`No se encontró la página correspondiente a '${currentPageName}' en areas_investigacion.`);
     }
 }
-
 // Llamar a la función al cargar la página
 showEmployeesForCurrentPage();
 

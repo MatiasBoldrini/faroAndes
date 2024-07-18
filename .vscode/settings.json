@@ -4,5 +4,6 @@
         "js",
         "assets/js",
         "assets/css"
-    ]
+    ],
+    "cSpell.language": "en,es-ES"
 }

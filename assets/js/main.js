@@ -35,10 +35,10 @@
             }
         });
 
-        $('a[href="#totop"]').click(function () {
-            $('html, body').animate({ scrollTop: 0 }, 'slow');
-            return false;
-        });
+        // $('a[href="#totop"]').click(function () {
+        //     $('html, body').animate({ scrollTop: 0 }, 'slow');
+        //     return false;
+        // });
 
 
         /* ---------------------------------------------- /*
@@ -48,27 +48,25 @@
         var homeSection = $('.home-section'),
             navbar = $('.navbar-custom'),
             navHeight = navbar.height(),
-            worksgrid = $('#works-grid'),
-            width = Math.max($(window).width(), window.innerWidth),
             mobileTest = false;
 
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             mobileTest = true;
         }
 
-        buildHomeSection(homeSection);
+        // buildHomeSection(homeSection);
         navbarAnimation(navbar, homeSection, navHeight);
-        navbarSubmenu(width);
-        hoverDropdown(width, mobileTest);
+        // navbarSubmenu(width);
+        // hoverDropdown(width, mobileTest);
 
-        $(window).resize(function () {
-            var width = Math.max($(window).width(), window.innerWidth);
-            buildHomeSection(homeSection);
-            hoverDropdown(width, mobileTest);
-        });
+        // $(window).resize(function () {
+        //     // var width = Math.max($(window).width(), window.innerWidth);
+        //     buildHomeSection(homeSection);
+        //     // hoverDropdown(width, mobileTest);
+        // });
 
         $(window).scroll(function () {
-            effectsHomeSection(homeSection, this);
+            // effectsHomeSection(homeSection, this);
             navbarAnimation(navbar, homeSection, navHeight);
         });
 
@@ -262,47 +260,7 @@
         });
 
 
-        /* ---------------------------------------------- /*
-         * Portfolio
-         /* ---------------------------------------------- */
 
-        var worksgrid = $('#works-grid'),
-            worksgrid_mode;
-
-        if (worksgrid.hasClass('works-grid-masonry')) {
-            worksgrid_mode = 'masonry';
-        } else {
-            worksgrid_mode = 'fitRows';
-        }
-
-        worksgrid.imagesLoaded(function () {
-            worksgrid.isotope({
-                layoutMode: worksgrid_mode,
-                itemSelector: '.work-item'
-            });
-        });
-
-        $('#filters a').click(function () {
-            $('#filters .current').removeClass('current');
-            $(this).addClass('current');
-            var selector = $(this).attr('data-filter');
-
-            worksgrid.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-
-            return false;
-        });
-
-
-        /* ---------------------------------------------- /*
-         * Testimonials
-         /* ---------------------------------------------- */
 
         if ($('.testimonials-slider').length > 0) {
             $('.testimonials-slider').flexslider({
@@ -312,47 +270,6 @@
         }
 
 
-        /* ---------------------------------------------- /*
-         * Post Slider
-         /* ---------------------------------------------- */
-
-        if ($('.post-images-slider').length > 0) {
-            $('.post-images-slider').flexslider({
-                animation: "slide",
-                smoothHeight: true,
-            });
-        }
-
-
-        /* ---------------------------------------------- /*
-         * Progress bar animations
-         /* ---------------------------------------------- */
-
-        $('.progress-bar').each(function (i) {
-            $(this).appear(function () {
-                var percent = $(this).attr('aria-valuenow');
-                $(this).animate({ 'width': percent + '%' });
-                $(this).find('span').animate({ 'opacity': 1 }, 900);
-                $(this).find('span').countTo({ from: 0, to: percent, speed: 900, refreshInterval: 30 });
-            });
-        });
-
-
-        /* ---------------------------------------------- /*
-         * Funfact Count-up
-         /* ---------------------------------------------- */
-
-        $('.count-item').each(function (i) {
-            $(this).appear(function () {
-                var number = $(this).find('.count-to').data('countto');
-                $(this).find('.count-to').countTo({ from: 0, to: number, speed: 1200, refreshInterval: 30 });
-            });
-        });
-
-
-        /* ---------------------------------------------- /*
-         * Youtube video background
-         /* ---------------------------------------------- */
 
         $(function () {
             $(".video-player").mb_YTPlayer({
@@ -387,42 +304,42 @@
          * Owl Carousel
          /* ---------------------------------------------- */
 
-        $('.owl-carousel').each(function (i) {
+        // $('.owl-carousel').each(function (i) {
 
-            // Check items number
-            if ($(this).data('items') > 0) {
-                items = $(this).data('items');
-            } else {
-                items = 4;
-            }
+        //     // Check items number
+        //     if ($(this).data('items') > 0) {
+        //         items = $(this).data('items');
+        //     } else {
+        //         items = 4;
+        //     }
 
-            // Check pagination true/false
-            if (($(this).data('pagination') > 0) && ($(this).data('pagination') === true)) {
-                pagination = true;
-            } else {
-                pagination = false;
-            }
+        //     // Check pagination true/false
+        //     if (($(this).data('pagination') > 0) && ($(this).data('pagination') === true)) {
+        //         pagination = true;
+        //     } else {
+        //         pagination = false;
+        //     }
 
-            // Check navigation true/false
-            if (($(this).data('navigation') > 0) && ($(this).data('navigation') === true)) {
-                navigation = true;
-            } else {
-                navigation = false;
-            }
+        //     // Check navigation true/false
+        //     if (($(this).data('navigation') > 0) && ($(this).data('navigation') === true)) {
+        //         navigation = true;
+        //     } else {
+        //         navigation = false;
+        //     }
 
-            // Build carousel
-            $(this).owlCarousel({
-                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-                nav: navigation,
-                dots: pagination,
-                loop: true,
-                dotsSpeed: 400,
-                items: items,
-                navSpeed: 300,
-                autoplay: 2000
-            });
+        //     // Build carousel
+        //     $(this).owlCarousel({
+        //         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        //         nav: navigation,
+        //         dots: pagination,
+        //         loop: true,
+        //         dotsSpeed: 400,
+        //         items: items,
+        //         navSpeed: 300,
+        //         autoplay: 2000
+        //     });
 
-        });
+        // });
 
 
         /* ---------------------------------------------- /*
@@ -473,258 +390,6 @@
                 console.log('Elemento no encontrado:', target);
             }
         });
-
-
-
-
-        /* ---------------------------------------------- /*
-         * Google Map
-         /* ---------------------------------------------- */
-
-        if ($("#map").length == 0 || typeof google == 'undefined') return;
-
-        // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
-
-        var mkr = new google.maps.LatLng(40.6700, -74.2000);
-        var cntr = (mobileTest) ? mkr : new google.maps.LatLng(40.6700, -73.9400);
-
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 11,
-                scrollwheel: false,
-                // The latitude and longitude to center the map (always required)
-                center: cntr, // New York
-
-                // How you would like to style the map.
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [
-                    {
-                        "featureType": "all",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            },
-                            {
-                                "saturation": "-11"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                            {
-                                "saturation": "22"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "geometry.stroke",
-                        "stylers": [
-                            {
-                                "saturation": "-58"
-                            },
-                            {
-                                "color": "#cfcece"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "labels.text",
-                        "stylers": [
-                            {
-                                "color": "#f8f8f8"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "labels.text.fill",
-                        "stylers": [
-                            {
-                                "color": "#999999"
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative.country",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                            {
-                                "color": "#f9f9f9"
-                            },
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#f2f2f2"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "saturation": "-19"
-                            },
-                            {
-                                "lightness": "-2"
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": 45
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.arterial",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#d8e1e5"
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                            {
-                                "color": "#dedede"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "labels.text",
-                        "stylers": [
-                            {
-                                "color": "#cbcbcb"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "labels.text.fill",
-                        "stylers": [
-                            {
-                                "color": "#9c9c9c"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    }
-                ]
-            };
-
-            // Get the HTML DOM element that will contain your map
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('map');
-
-            // Create the Google Map using our element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
-
-            // Let's also add a marker while we're at it
-            var image = new google.maps.MarkerImage('assets/images/map-icon.png',
-                new google.maps.Size(59, 65),
-                new google.maps.Point(0, 0),
-                new google.maps.Point(24, 42)
-            );
-
-            var marker = new google.maps.Marker({
-                position: mkr,
-                icon: image,
-                title: 'Titan',
-                infoWindow: {
-                    content: '<p><strong>Rival</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>'
-                },
-                map: map,
-            });
-        }
-
     });
 })(jQuery);
 
@@ -767,64 +432,6 @@ function type() {
 
 
 }
-// const images1 = [
-//     "FBLG_ABB_100.jpg",
-//     "FBLG_Aceros_100.jpg",
-//     "FBLG_AESA_100.jpg",
-//     "FBLG_ANDES_DEL_SUR_100.jpg",
-//     "FBLG_Arcor_100.jpg",
-//     "FBLG_AVA_100.jpg",
-//     "FBLG_Axion_100.jpg",
-//     "FBLG_baker_100.jpg",
-//     "FBLG_Barrick_100.jpg",
-//     "FBLG_Boccard_100.jpg",
-//     "FBLG_Cementos_100.jpg",
-//     "FBLG_Chevron_100.jpg",
-//     "FBLG_Colgate_100.jpg",
-//     "FBLG_DISTROCUYO_100.jpg",
-//     "FBLG_EDEMSA_100.jpg",
-//     // Agrega más imágenes aquí según sea necesario
-// ];
-// const images2 = [
-//     "FBLG_Gasoducto_100.jpg",
-//     "FBLG_Glucovil_100.jpg",
-//     "FBLG_Icsa_100.jpg",
-//     "FBLG_Irrigacion_100.jpg",
-//     "FBLG_Ledesma_100.jpg",
-//     "FBLG_PAE_100.jpg",
-//     "FBLG_Pampa_100.jpg",
-//     "FBLG_Pecom_100.jpg",
-//     "FBLG_Petroquimica_100.jpg",
-//     "FBLG_Praxair_100.jpg",
-//     "FBLG_Rockwell_100.jpg",
-//     "FBLG_SENSIA_100.jpg",
-//     "FBLG_Techint_100.jpg",
-//     "FBLG_Tecna_100.jpg",
-//     "FBLG_Tecpetrol_100.jpg",
-//     "FBLG_Unilever_100.jpg",
-// ]
-// const container = document.getElementById('imageContainer');
-
-// images1.forEach((imageName, index) => {
-//     const div = document.createElement('div');
-//     div.classList.add('scroll-item');
-//     const img = document.createElement('img');
-//     img.src = `assets/extra/Clients/${imageName}`;
-//     img.alt = `Imagen ${index + 1}`;
-//     div.appendChild(img);
-//     container.appendChild(div);
-// });
-// const container2 = document.getElementById('imageContainer2');
-// images2.forEach((imageName, index) => {
-//     const div = document.createElement('div');
-//     div.classList.add('scroll-item');
-//     const img = document.createElement('img');
-//     img.src = `assets/extra/Clients/${imageName}`;
-//     img.alt = `Imagen ${index + 1}`;
-//     div.appendChild(img);
-//     container2.appendChild(div);
-// });
-
 function aosInit() {
     AOS.init({
         duration: 600,
