@@ -441,7 +441,7 @@ function aosInit() {
     });
 }
 function redirectToEmployee(talentoKey) {
-    window.location.href = `author.html?talento=${talentoKey}`;
+    window.location.href = `author.php?talento=${talentoKey}`;
 }
 var galleryThumbs = new Swiper('.gallery-thumbs', {
 	effect: 'coverflow',

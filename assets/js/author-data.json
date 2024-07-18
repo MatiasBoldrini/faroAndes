@@ -1,0 +1,58 @@
+{
+    "RubenJuarez": {
+        "name": "Rubén Juárez D' Ámbola",
+        "photo": "assets/extra/Talentos/Ruben-Juarez.jpeg"
+    },
+    "DanielPortnoy": {
+        "name": "Daniel Portnoy",
+        "photo": "assets/extra/Talentos/Daniel-Portnoy.jpg"
+    },
+    "LeonardoAmurrio": {
+        "name": "Leonardo Amurrio",
+        "photo": "assets/extra/Talentos/Leonardo-Amurrio.jpg"
+    },
+    "MauricioMiranda": {
+        "name": "Mauricio Miranda",
+        "photo": "assets/extra/Talentos/Mauricio-Miranda.jpeg"
+    },
+    "MarceloBoldrini": {
+        "name": "Marcelo Boldrini",
+        "photo": "assets/extra/Talentos/Marcelo-Boldrini.jpeg"
+    },
+    "SebastianSpalenza": {
+        "name": "Sebastian Spalenza",
+        "photo": "assets/extra/Talentos/Sebastian-Spalenza.jpg"
+    },
+    "PedroMiralles": {
+        "name": "Pedro Miralles",
+        "photo": "assets/extra/Talentos/Pedro-Miralles.jpg"
+    },
+    "MarianoChicatun": {
+        "name": "Mariano Chicatun",
+        "photo": "assets/extra/Talentos/Foto-Mariano-Chicatun.jpg"
+    },
+    "RobertoAquilano": {
+        "name": "Roberto Aquilano",
+        "photo": "assets/extra/Talentos/Roberto-Aquilano.jpeg"
+    },
+    "VictoriaColombo": {
+        "name": "Victoria Colombo",
+        "photo": "assets/extra/Talentos/Victoria-Colombo.webp"
+    },
+    "LeonardoGuse": {
+        "name": "Leonardo Guse",
+        "photo": "assets/extra/Talentos/Leonardo-Guse.jpeg"
+    },
+    "CoquiPace": {
+        "name": "Coqui Pace",
+        "photo": "assets/extra/Talentos/Coqui-pace.png"
+    },
+    "RaulComelli": {
+        "name": "Raul Comelli",
+        "photo": "assets/extra/Talentos/Raul-Comelli.jpg"
+    },
+    "ManuelaPerez": {
+        "name": "Manuela Perez",
+        "photo": "assets/extra/Talentos/Foto-Manuela-Perez.jpg"
+    }
+}
