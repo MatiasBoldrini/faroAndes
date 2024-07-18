@@ -196,21 +196,6 @@ function showEmployeeDetail() {
     if (talento) {
         const detailContainer = document.getElementById('talento-detail-container');
         const imageContainer = document.getElementById('author-image-container');
-        const photoWithPng = talento.photo.replace(/\.[^/.]+$/, ".png").replace("assets/extra/Talentos/","");
-        const fullPhotoUrl = `https://faroandes.sirv.com/Images/${photoWithPng}`;
-        
-        // Crear y añadir la meta etiqueta og:image
-        const metaImage = document.createElement('meta');
-        metaImage.setAttribute('property', 'og:image');
-        metaImage.setAttribute('content', fullPhotoUrl);
-        document.getElementsByTagName('head')[0].appendChild(metaImage);
-        
-        // Crear y añadir la meta etiqueta og:title
-        const metaTitle = document.createElement('meta');
-        metaTitle.setAttribute('property', 'og:title');
-        metaTitle.setAttribute('content', talento.name);
-
-        document.getElementsByTagName('head')[0].appendChild(metaTitle);
         imageContainer.innerHTML = `
         <img style="object-fit: cover;" class="avatar  shadow-xl position-relative z-index-2"
 								src="${talento.photo}" alt="foto_perfil" loading="lazy"></img>
