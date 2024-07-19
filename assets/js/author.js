@@ -243,7 +243,7 @@ function showEmployeeDetail() {
 
                 </div>
                 ${talento.description}
-                <button class="mt-2 btn btn-outline-dark mb-0" onclick="history.back()"><i class="me-2 fa-solid fa-arrow-left"></i> Regresar</button>
+                <button class="mt-2 btn btn-outline-dark mb-0" id="btn-regresar" ><i class="me-2 fa-solid fa-arrow-left"></i> Regresar</button>
 
             `;
     }
@@ -289,8 +289,12 @@ function showEmployeesForCurrentPage() {
         console.error(`No se encontró la página correspondiente a '${currentPageName}' en areas_investigacion.`);
     }
 }
-// Llamar a la función al cargar la página
 showEmployeesForCurrentPage();
-
-
 showEmployeeDetail();
+document.getElementById('btn-regresar').addEventListener('click', function() {
+    if (document.referrer) {
+        history.back();
+    } else {
+        window.location.href = 'https://www.faroandes.com/'; 
+    }
+});
