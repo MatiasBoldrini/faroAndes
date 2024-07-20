@@ -101,6 +101,13 @@ const talentos = {
         linkedin: '',
         description: '<p class="text-lg mb-0"> Description</p>'
     },
+    JaimeGarcia: {
+        name: 'Jaime García',
+        areas: [],
+        photo: 'assets/extra/Talentos/Jaime-Garcia.webp',
+        linkedin: 'www.linkedin.com/in/jaimergarcia',
+        description: '<p class="text-lg mb-0">El desarrollo <strong>científico</strong> y <strong>tecnológico</strong> ha generado un impresionante progreso para la <strong>humanidad</strong>.</p><p class="text-lg mb-0">En mi área del conocimiento (<strong>matemática</strong>, <strong>física</strong> y <strong>astronomía</strong>) a partir del siglo XX se han producido impresionantes descubrimientos que han otorgado, a los seres humanos, la oportunidad de comunicarse instantáneamente, obtener imágenes digitales o viajar al espacio, entre otras muchas cosas. Y esto es por la <strong>inversión</strong> de los <strong>estados</strong> y de las personas en la <strong>investigación</strong>.</p><p class="text-lg mb-0">De muy joven me involucré en la <strong>ciencia</strong>, primero como un muchachito curioso, más tarde como un estudiante consciente y constante. Finalmente me formé en la universidad y, junto a otros jóvenes entusiastas, creé un instituto privado de investigación científica que aún hoy dirijo.</p><p class="text-lg mb-0">Estoy en el Faro porque estoy comprometido con la idea de hacer investigación desde la iniciativa privada. Y, además, porque comparto los sueños de este excelente grupo humano.</p><p class="text-lg mb-0"><strong>Doctor</strong> en <strong>Matemática Aplicada</strong> por la <strong>Universidad Federal de Minas Gerais</strong>, Brasil, con tesis aplicada a la <strong>Astrofísica</strong> y maestría previa en <strong>física-matemática</strong>.</p><p class="text-lg mb-0">He trabajado en diversos proyectos relacionados con la medición de la <strong>contaminación ambiental</strong>, optimización de <strong>procesos industriales</strong>, modelado matemático de variables <strong>econométricas</strong> y de <strong>marketing</strong>. Mi área actual de investigación está orientada a la <strong>sismología</strong> de las estrellas.</p><p class="text-lg mb-0">Me apasiona la <strong>astronomía</strong> y la <strong>astrofísica</strong> y estoy muy comprometido con su enseñanza y divulgación. Sobre esto he publicado libros y dado centenares de conferencias en distintos ámbitos y países. Organizo anualmente un evento de <strong>astronomía</strong> que reúne centenares de personas interesadas. Conozco profundamente el cielo y me gusta compartirlo con otras personas.</p>'
+    },
     ManuelaPerez: {
         name: 'Manuela Perez',
         areas: [],

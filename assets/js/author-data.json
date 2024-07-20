@@ -83,6 +83,13 @@
       "linkedin": "",
       "description": "<p class=\"text-lg mb-0\"> Description</p>"
     },
+    "JaimeGarcia": {
+        "name": "Jaime García",
+        "areas": [],
+        "photo": "assets/extra/Talentos/Jaime-Garcia.webp",
+        "linkedin": "",
+        "description": "<p class=\"text-lg mb-0\"> Description</p>"
+      },
     "RaulComelli": {
       "name": "Raul Comelli",
       "areas": [],

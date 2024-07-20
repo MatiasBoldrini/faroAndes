@@ -22,6 +22,7 @@ if (isset($authorData[$talento])) {
     // Cambiar la extensión de la imagen a .png
     $photoUrl = str_replace('.jpeg', '.png', $authorData[$talento]['photo']);
     $photoUrl = str_replace('.jpg', '.png', $photoUrl);
+    $photoUrl = str_replace('.webp', '.png', $photoUrl);
 } else {
     // Si el talento no existe, usar una imagen por defecto
     $name = 'Talento Desconocido';
@@ -38,27 +39,18 @@ $title = htmlspecialchars($name);
 <!DOCTYPE html>
 <html lang="es">
 
-</html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <title>
-        FARO andes
-    </title>
-
+    <title>FARO andes</title>
     <meta property="og:site_name" content="FARO andes">
     <meta property="og:title" content="<?php echo $title; ?>">
     <meta property="og:description" content="Corazón de científicos">
-    <meta property="og:image" content="<?php echo htmlspecialchars($imageUrl); ?>">
+    <meta name="image" property="og:image" content="<?php echo htmlspecialchars($imageUrl); ?>">
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-    <!-- Nucleo Icons -->
-    <!-- <link href="../assets/css/nucleo-icons.css" rel="stylesheet" /> -->
-    <!-- <link href="../assets/css/nucleo-svg.css" rel="stylesheet" /> -->
-    <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
