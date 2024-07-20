@@ -1,0 +1,65 @@
+{
+	"Catalisis": {
+		"talentos_investigacion": [
+			"LeonardoGuse",
+			"RaulComelli"
+		],
+		"pageName": "catalisis"
+	},
+	"AI aplicada a I+D": {
+		"talentos_investigacion": [
+			"MauricioMiranda",
+			"MarianoChicatun"
+		],
+		"pageName": "AI-Inv-Desarrollo"
+	},
+	"Soluciones ingeniería aeroespacial": {
+		"talentos_investigacion": [
+			"DanielPortnoy"
+		],
+		"pageName": "ingenieria-espacial"
+	},
+	"Tecnologías Alternativas para la Generación de Hidrógeno": {
+		"talentos_investigacion": [
+			"RaulComelli",
+			"LeonardoGuse",
+			"SebastianSpalenza",
+			"PedroMiralles",
+			"LeonardoAmurrio"
+		],
+		"pageName": "energias-alternativas-hidrogeno"
+	},
+	"Tecnología de Nuevas Energías": {
+		"talentos_investigacion": [
+			"PedroMiralles",
+			"LeonardoAmurrio"
+		],
+		"pageName": "tecnologia-nuevas-energias"
+	},
+	"Planeador y avión propulsado por hidrógeno": {
+		"talentos_investigacion": [
+			"CoquiPace"
+		],
+		"pageName": "lanzadores-espaciales"
+	},
+	"Refugios del futuro": {
+		"talentos_investigacion": [
+			"VictoriaColombo",
+			"ManuelaPerez",
+			"SebastianSpalenza"
+		],
+		"pageName": "viviendas-sustentables"
+	},
+	"Desarrollo de oportunindades": {
+		"talentos_investigacion": [
+			"MarceloBoldrini"
+		],
+		"pageName": "index"
+	},
+	"Estudio de arquitectura": {
+		"talentos_investigacion": [
+			"RubenJuarez"
+		],
+		"pageName": "https://juarezdambola.com/"
+	}
+}

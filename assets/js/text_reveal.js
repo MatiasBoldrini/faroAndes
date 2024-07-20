@@ -12,7 +12,6 @@ paragraphs.forEach(paragraph => {
     paragraph.innerHTML = htmlString;
 });
 
-
 spans = [...document.querySelectorAll('.span-text-reveal')];
 
 function revealSpans() {
@@ -45,4 +44,4 @@ function revealSpans() {
 
 
 window.addEventListener('scroll', revealSpans);
-revealSpans();
+// revealSpans();

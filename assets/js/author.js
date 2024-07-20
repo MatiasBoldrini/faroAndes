@@ -5,81 +5,22 @@ function getQueryParam(param) {
 let talentos = {};
 let areas_investigacion = {};
 
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('/assets/talentos-db/talentos.json')
-        .then(response => response.json())
-        .then(data => {
-            talentos = data;
-            showEmployeeDetail();
-            areas_investigacion = {
-                'Catalisis': {
-                    talentos_investigacion: [
-                        talentos['LeonardoGuse'],
-                        talentos['RaulComelli'],
-                    ],
-                    pageName: 'catalisis',
-                },
-                'AI aplicada a I+D': {
-                    talentos_investigacion: [
-                        talentos['MauricioMiranda'],
-                        talentos['MarianoChicatun'],
-                    ],
-                    pageName: 'AI-Inv-Desarrollo',
-                },
-                'Soluciones ingeniería aeroespacial': {
-                    talentos_investigacion: [
-                        talentos['DanielPortnoy'],
-                    ],
-                    pageName: 'ingenieria-espacial',
-                },
-                'Tecnologías Alternativas para la Generación de Hidrógeno': {
-                    talentos_investigacion: [
-                        talentos['RaulComelli'],
-                        talentos['LeonardoGuse'],
-                        talentos['SebastianSpalenza'],
-                        talentos['PedroMiralles'],
-                        talentos['LeonardoAmurrio'],
-                    ],
-                    pageName: 'energias-alternativas-hidrogeno',
-                },
-                'Tecnología de Nuevas Energías': {
-                    talentos_investigacion: [
-                        talentos['PedroMiralles'],
-                        talentos['LeonardoAmurrio']
-                    ],
-                    pageName: 'tecnologia-nuevas-energias',
-                },
-                'Planeador y avión propulsado por hidrógeno': {
-                    talentos_investigacion: [
-                        talentos['CoquiPace']
-                    ],
-                    pageName: 'lanzadores-espaciales',
-                },
-                'Refugios del futuro': {
-                    talentos_investigacion: [
-                        talentos['VictoriaColombo'],
-                        talentos['ManuelaPerez'],
-                        talentos['SebastianSpalenza']
-                    ],
-                    pageName: 'viviendas-sustentables',
-                },
-                'Desarrollo de oportunindades': {
-                    talentos_investigacion: [
-                        talentos['MarceloBoldrini'],
-                    ],
-                    pageName: 'index',
-                },
-                'Estudio de arquitectura': {
-                    talentos_investigacion: [
-                        talentos['RubenJuarez'],
-                    ],
-                    pageName: 'https://juarezdambola.com/',
-                },
-            };
+function loadData() {
+    return Promise.all([
+        fetch('/assets/talentos-db/talentos.json').then(response => response.json()),
+        fetch('/assets/talentos-db/areas-investigacion.json').then(response => response.json())
+    ])
+        .then(([talentosData, areasData]) => {
+            talentos = talentosData;
+            areas_investigacion = areasData;
 
+            showEmployeeDetail();
             showEmployeesForCurrentPage();
         })
         .catch(error => console.error('Error al cargar los datos del JSON:', error));
+}
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
 });
 document.getElementById('btn-regresar').addEventListener('click', function () {
     if (document.referrer) {
@@ -92,22 +33,6 @@ document.getElementById('btn-regresar').addEventListener('click', function () {
 function showEmployeeDetail() {
     const talentoKey = getQueryParam('talento');
     const talento = talentos[talentoKey];
-    for (let area in areas_investigacion) {
-        if (area != 'pageName') {
-            const empleados = areas_investigacion[area].talentos_investigacion;
-            empleados.forEach(empleado => {
-                // Verificar si el empleado existe y tiene la propiedad 'areas'
-                if (empleado.name) {
-
-                    // Agregar el área al empleado
-                    empleado.areas.push(area);
-                } else {
-                    console.error(`Empleado inválido o sin propiedades definidas: ${empleado}`);
-                }
-            });
-        }
-
-    }
     if (talento) {
         const detailContainer = document.getElementById('talento-detail-container');
         const imageContainer = document.getElementById('author-image-container');
@@ -126,7 +51,7 @@ function showEmployeeDetail() {
                   ${(() => {
                 let result = Object.keys(areas_investigacion).map(area => {
                     // Verificar si el área está asignada al empleado
-                    if (areas_investigacion[area].talentos_investigacion.includes(talento)) {
+                    if (areas_investigacion[area].talentos_investigacion.includes(talentoKey)) {
                         let htmlString;
 
                         if (areas_investigacion[area].pageName.includes('.')) {
@@ -160,11 +85,11 @@ function showEmployeeDetail() {
                 ${talento.description}
             `;
     }
-}
+}// Función para mostrar los empleados para la página actual
 function showEmployeesForCurrentPage() {
-    // Obtener el nombre de la página actual desde la URL
     const currentPageName = window.location.pathname.split('/').pop().replace('.html', '');
-    areaInvestigacion = null;
+    let areaInvestigacion = null;
+
     for (let area in areas_investigacion) {
         if (areas_investigacion[area].pageName === currentPageName) {
             areaInvestigacion = areas_investigacion[area];
@@ -177,11 +102,14 @@ function showEmployeesForCurrentPage() {
 
         // Limpiar contenedores de empleados
         const employeeContainer = document.getElementById('multiple-talentos-container');
+        employeeContainer.innerHTML = ''; // Limpiar antes de agregar nuevos elementos
 
         // Generar HTML para cada empleado
-        empleados.forEach(empleado => {
-            const empleadokey = empleado.name.replace(/\s+/g, ''); // Reemplazar espacios por guiones
-            employeeContainer.innerHTML += `
+        empleados.forEach(empleadoKey => {
+            const empleado = talentos[empleadoKey];
+            if (empleado) { // Verificar que el empleado existe
+                const empleadokey = empleado.name.replace(/\s+/g, ''); // Reemplazar espacios por guiones
+                employeeContainer.innerHTML += `
                     <li class="clearfix multiple-talentos-item">
                         <div class="widget-posts-image">
                             <div class="hexagon-img-container">
@@ -196,9 +124,13 @@ function showEmployeesForCurrentPage() {
                             </div>
                         </div>
                     </li>
-                    `;
+                `;
+            }
         });
     } else {
-        console.error(`No se encontró la página correspondiente a '${currentPageName}' en areas_investigacion.`);
+        if(currentPageName != 'author.php'){
+            console.error(`No se encontró la página correspondiente a '${currentPageName}' en areas_investigacion.`);
+        }
     }
 }
+
