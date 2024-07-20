@@ -232,9 +232,10 @@
                 $(this).collapse('hide');
             }
         });
-         $("button.navbar-toggle").click(function (e) {
-           $("#navbar-custom").collapse('hide');
-           $("#navbar-custom").removeClass("in"); });
+        $("button.navbar-toggle").click(function (e) {
+            $("#navbar-custom").collapse('hide');
+            $("#navbar-custom").removeClass("in");
+        });
 
 
         /* ---------------------------------------------- /*
@@ -372,12 +373,12 @@
 
             // Verifica si el elemento target existe en la página
             if ($(target).length) {
-                if(target === '#origen'){
+                if (target === '#origen') {
                     var offset = $(target).offset().top - 50; // Ajusta 100 según el tamaño de tu navbar
-                }else if(target === '#conecta-tu-talento'){
+                } else if (target === '#conecta-tu-talento') {
                     var offset = $(target).offset().top + 90; // Ajusta 100 según el tamaño de tu navbar
                 }
-                else{
+                else {
                     var offset = $(target).offset().top + 75; // Ajusta 100 según el tamaño de tu navbar
                 }
                 // Ajusta el scroll para que tenga en cuenta el tamaño del navbar
@@ -444,58 +445,84 @@ function redirectToEmployee(talentoKey) {
     window.location.href = `author.php?talento=${talentoKey}`;
 }
 var galleryThumbs = new Swiper('.gallery-thumbs', {
-	effect: 'coverflow',
-	grabCursor: true,
-	centeredSlides: true,
-	// slidesPerView: '3',
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    // slidesPerView: '3',
     slidesPerView: 'auto',
-    longSwipesMs:3000,
+    longSwipesMs: 3000,
     // loop: true,
     // loopedSlides: 1,
     mousewheel: {
         enabled: true,
         releaseOnEdges: true,
-      },
-	coverflowEffect: {
+    },
+    coverflowEffect: {
         rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows : false,
-	  },
-      watchSlidesVisibility: false,
-      watchSlidesProgress: true,
-  });
-  
-  
-var galleryTop = new Swiper('.swiper-container.testimonial', {
-	speed: 400,
-	spaceBetween: 50,
-	autoplay: {
-	  delay: 10000,
-	  disableOnInteraction: false,
-	},
-    grabCursor: true,
-	direction: 'horizontal',
-	pagination: {
-	  clickable: true,
-	  el: '.swiper-pagination',
-	  type: 'bullets',
-	},
-	thumbs: {
-		swiper: galleryThumbs
-	  },
-      touchReleaseOnEdges: true,
-      
+        slideShadows: false,
+    },
+    watchSlidesVisibility: false,
+    watchSlidesProgress: true,
+});
 
-  });galleryTop.on('slideChange', function() {
+
+var galleryTop = new Swiper('.swiper-container.testimonial', {
+    speed: 400,
+    spaceBetween: 50,
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    grabCursor: true,
+    direction: 'horizontal',
+    pagination: {
+        clickable: true,
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    thumbs: {
+        swiper: galleryThumbs
+    },
+    touchReleaseOnEdges: true,
+
+
+}); galleryTop.on('slideChange', function () {
     galleryThumbs.slideTo(galleryTop.activeIndex);
 });
 
-galleryThumbs.on('slideChange', function() {
+galleryThumbs.on('slideChange', function () {
     galleryTop.slideTo(galleryThumbs.activeIndex);
 });
-  
+
 
 
 document.addEventListener("DOMContentLoaded", type);
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('assets/talentos-db/talentos.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('dinamic-hexagons-container');
+            for (let key in data) {
+                if (data.hasOwnProperty(key)) {
+                    if (key != 'RubenJuarez') {
+                        const cliente = data[key];
+                        const clienteHTML = `
+                <div class="hexagon-element hex-scale"
+                style="background-image: url('${cliente.photo}') !important;" loading="lazy">
+                <button onclick="redirectToEmployee('${key}')" class="talentos-button">
+                <div class="hexagon-overlay">
+                ${cliente.name}
+                </div>
+                </button>
+                </div>
+                `;
+                        container.innerHTML += clienteHTML;
+                    }
+                }
+            }
+        })
+        .catch(error => console.error('Error al cargar los datos del JSON:', error));
+});

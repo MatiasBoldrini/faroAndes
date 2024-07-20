@@ -12,7 +12,7 @@
 $talento = isset($_GET['talento']) ? $_GET['talento'] : '';
 
 // Leer y decodificar el archivo JSON
-$jsonFile = 'assets/js/author-data.json';
+$jsonFile = 'assets/talentos-db/talentos.json';
 $jsonData = file_get_contents($jsonFile);
 $authorData = json_decode($jsonData, true);
 
@@ -83,7 +83,10 @@ $title = htmlspecialchars($name);
 
                             <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto"
                                 id="talento-detail-container">
-
+                            </div>
+                            <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
+                                <button class="mt-2 btn btn-outline-dark mb-0" id="btn-regresar"><i
+                                        class="me-2 fa-solid fa-arrow-left"></i> Regresar</button>
                             </div>
                         </div>
                     </div>
