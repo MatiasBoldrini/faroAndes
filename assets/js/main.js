@@ -500,6 +500,30 @@ galleryThumbs.on('slideChange', function () {
 
 
 document.addEventListener("DOMContentLoaded", type);
+document.addEventListener('DOMContentLoaded', function() {
+    // Crear el nuevo div
+    var videoPlayer = document.createElement('div');
+    videoPlayer.className = 'video-player';
+    videoPlayer.setAttribute('data-property', JSON.stringify({
+        videoURL: 'https://youtu.be/4WiVomeumS4',
+        containment: '.home-section',
+        startAt: 18,
+        mute: true,
+        autoPlay: true,
+        loop: true,
+        opacity: 1,
+        showControls: false,
+        showYTLogo: false,
+        useOnMobile: true,
+        playOnlyIfVisible: true
+    }));
+
+    // Seleccionar el contenedor donde se agregará el nuevo div
+    var container = document.querySelector('.home-section');
+    
+    // Agregar el nuevo div al contenedor
+    container.appendChild(videoPlayer);
+});
 document.addEventListener('DOMContentLoaded', function () {
     fetch('assets/talentos-db/talentos.json')
         .then(response => response.json())
