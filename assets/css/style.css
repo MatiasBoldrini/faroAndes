@@ -313,9 +313,14 @@ a,
 }
 
 .parallax-bg {
-  background-attachment: fixed;
   background-size: cover;
 }
+@supports not (-webkit-backdrop-filter: blur(1px)){
+  .parallax-bg {
+    background-attachment: fixed;
+  }
+}
+/* Fix safari bug */
 
 /* Vertical margin, padding */
 .p-0 {
