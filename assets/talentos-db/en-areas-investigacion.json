@@ -1,0 +1,65 @@
+{
+	"Catalysis": {
+		"talentos_investigacion": [
+			"LeonardoGuse",
+			"RaulComelli"
+		],
+		"pageName": "catalisis"
+	},
+	"AI Applied to R&D": {
+		"talentos_investigacion": [
+			"MauricioMiranda",
+			"MarianoChicatun"
+		],
+		"pageName": "AI-Inv-Desarrollo"
+	},
+	"Aerospace Engineering Solutions": {
+		"talentos_investigacion": [
+			"DanielPortnoy"
+		],
+		"pageName": "ingenieria-espacial"
+	},
+	"Alternative Technologies for Hydrogen Generation": {
+		"talentos_investigacion": [
+			"RaulComelli",
+			"LeonardoGuse",
+			"SebastianSpalenza",
+			"PedroMiralles",
+			"LeonardoAmurrio"
+		],
+		"pageName": "energias-alternativas-hidrogeno"
+	},
+	"New Energy Technology": {
+		"talentos_investigacion": [
+			"PedroMiralles",
+			"LeonardoAmurrio"
+		],
+		"pageName": "tecnologia-nuevas-energias"
+	},
+	"Hydrogen-Powered Aircraft and Planner": {
+		"talentos_investigacion": [
+			"CoquiPace"
+		],
+		"pageName": "lanzadores-espaciales"
+	},
+	"Future Shelters": {
+		"talentos_investigacion": [
+			"VictoriaColombo",
+			"ManuelaPerez",
+			"SebastianSpalenza"
+		],
+		"pageName": "viviendas-sustentables"
+	},
+	"Opportunity Development": {
+		"talentos_investigacion": [
+			"MarceloBoldrini"
+		],
+		"pageName": "index"
+	},
+	"Architecture Studio": {
+		"talentos_investigacion": [
+			"RubenJuarez"
+		],
+		"pageName": "https://juarezdambola.com/"
+	}
+}

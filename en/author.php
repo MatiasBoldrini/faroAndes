@@ -12,7 +12,7 @@
 $talento = isset($_GET['talento']) ? $_GET['talento'] : '';
 
 // Leer y decodificar el archivo JSON
-$jsonFile = 'assets/talentos-db/talentos.json';
+$jsonFile = '../assets/talentos-db/en-talentos.json';
 $jsonData = file_get_contents($jsonFile);
 $authorData = json_decode($jsonData, true);
 
@@ -26,7 +26,7 @@ if (isset($authorData[$talento])) {
 } else {
     // Si el talento no existe, usar una imagen por defecto
     $name = 'Talento Desconocido';
-    $photoUrl = 'assets/extra/default-image.png'; // Reemplaza con la ruta a una imagen por defecto en .png
+    $photoUrl = '/assets/extra/default-image.png'; // Reemplaza con la ruta a una imagen por defecto en .png
 }
 
 // Generar la URL completa de la imagen
@@ -55,7 +55,7 @@ $title = htmlspecialchars($name);
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
-    <link id="pagestyle" href="../assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
+    <link id="pagestyle" href="/assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
 </head>
 
 <body class="blog-author bg-gray-200">
@@ -64,7 +64,8 @@ $title = htmlspecialchars($name);
     <!-- End Navbar -->
     <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
     <header>
-        <div class="page-header min-height-400" style="background-image: url('assets/extra/faro.webp');" loading="lazy">
+        <div class="page-header min-height-400" style="background-image: url('/assets/extra/faro.webp');"
+            loading="lazy">
             <span class="mask bg-gradient-dark opacity-2"></span>
         </div>
     </header>
@@ -86,7 +87,7 @@ $title = htmlspecialchars($name);
                             </div>
                             <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
                                 <button class="mt-2 btn btn-outline-dark mb-0" id="btn-regresar"><i
-                                        class="me-2 fa-solid fa-arrow-left"></i> Regresar</button>
+                                        class="me-2 fa-solid fa-arrow-left"></i> Back</button>
                             </div>
                         </div>
                     </div>
@@ -94,7 +95,7 @@ $title = htmlspecialchars($name);
             </div>
         </section>
     </div>
-    <script src="/assets/js/author.js"></script>
+    <script src="/assets/js/author-en.js"></script>
     <script src="/assets/lib/components-font-awesome/js/fontawesome_kit.js" crossorigin="anonymous"></script>
 
 </body>
