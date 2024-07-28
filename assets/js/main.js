@@ -206,14 +206,14 @@ function type() {
 
 
 }
-function aosInit() {
-    AOS.init({
-        duration: 600,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-    });
-}
+// function aosInit() {
+//     AOS.init({
+//         duration: 600,
+//         easing: 'ease-in-out',
+//         once: true,
+//         mirror: false
+//     });
+// }
 function redirectToEmployee(talentoKey) {
     const currentPath = window.location.pathname;
     

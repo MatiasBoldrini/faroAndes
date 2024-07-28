@@ -46,7 +46,7 @@ $title = htmlspecialchars($name);
     <title>FARO andes</title>
     <meta property="og:site_name" content="FARO andes">
     <meta property="og:title" content="<?php echo $title; ?>">
-    <meta property="og:description" content="Corazón de científicos">
+    <meta property="og:description" content="Scientific Heart">
     <meta name="image" property="og:image" content="<?php echo htmlspecialchars($imageUrl); ?>">
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"

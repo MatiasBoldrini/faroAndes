@@ -63,9 +63,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
-
-	<!-- <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet"> -->
-	<!-- <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="assets/css/text_reveal.css">
 	<link rel="stylesheet" href="assets/css/cards-quote.css">
 	<link rel="stylesheet" href="assets/css/hexagons-grid.css">
@@ -77,9 +74,10 @@
 	<link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
 	<link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60" style="overflow-x: hidden;">
 	<main>
 		<!-- <div class="page-loader">
 			<div class="loader">Loading...</div>
@@ -138,21 +136,21 @@
 		<section class="module" id="text-reveal">
 			<h1 class="module-title font-alt">El Faro</h1>
 			<div class="container textarea-container">
-				<p class="textarea">Así como aquellas cosas que simplemente suceden cuando dejamos que todo pase, <br>
+				<p data-aos="fade-up">Así como aquellas cosas que simplemente suceden cuando dejamos que todo pase, <br>
 					nos encontramos con una luz de sabiduría en la inmensidad de una montaña.
 				</p>
-				<p class="textarea">
+				<p data-aos="fade-up">
 					¿Podría un faro en la montaña ser una nueva luz para la ciencia?
 				</p>
-				<p class="textarea">Un Faro nunca visto, pero que siempre estuvo, esperando y convocando <br>
+				<p data-aos="fade-up">Un Faro nunca visto, pero que siempre estuvo, esperando y convocando <br>
 					a quienes perciben que en este lugar los sueños se transforman en una realidad.
 				</p>
-				<p class="textarea">Sobre la cumbre de la montaña, allí donde la tierra parece juntarse con el cielo,
+				<p data-aos="fade-up">Sobre la cumbre de la montaña, allí donde la tierra parece juntarse con el cielo,
 					<br>
 					un faro de sabiduría que puede transformarlo todo para crear un nuevo mundo.
 				</p>
-				<p class="textarea">En este entorno y contexto pareciera que ya nada es imposible…</p>
-				<p class="textarea">Faro andes, la sabiduría es LUZ para el nuevo mundo.</p>
+				<p data-aos="fade-up">En este entorno y contexto pareciera que ya nada es imposible…</p>
+				<p data-aos="fade-up">Faro andes, la sabiduría es LUZ para el nuevo mundo.</p>
 			</div>
 		</section>
 		<section class="module bg-dark-60" id="origen"  loading="lazy" style="background-image: url('assets/extra/Faro-inicios.webp');">
@@ -174,7 +172,7 @@
 		<section class="spacer" style="padding-top: 50px; background-color: #F4F4F4;">
 			<div class=" testimonial-section">
 				<div class="testi-user-img">
-					<div class="swiper-container gallery-thumbs">
+					<div data-aos="zoom-out-up" data-aos-duration="1000"  data-aos-offset="300" class="swiper-container gallery-thumbs">
 						<div class="swiper-wrapper">
 
 							<div class="swiper-slide">
@@ -194,7 +192,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="user-saying ">
+				<div class="user-saying " data-aos="zoom-out-down" data-aos-duration="1000"  data-aos-offset="300">
 					<div class="swiper-container testimonial">
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper ">
@@ -298,7 +296,7 @@
 				<div class="row">
 					<div class="col-sm-6 col-md-3 col-lg-3">
 
-						<div class="alt-features-item" style="margin-top: 10px !important;">
+						<div data-aos="fade-right" data-aos-duration="1000"  data-aos-offset="300" class="alt-features-item" style="margin-top: 10px !important;">
 							<div class="alt-features-icon">
 								<i style="color: #228B22;" class="fa-solid fa-earth-americas"></i>
 							</div>
@@ -309,7 +307,7 @@
 							recursos para asegurar un futuro próspero y ambientalmente consciente.
 
 						</div>
-						<div class="alt-features-item">
+						<div data-aos="fade-right" data-aos-duration="1000"  data-aos-offset="300" class="alt-features-item">
 							<div class="alt-features-icon"><i style="color: #1E90FF;" class="fa-solid fa-droplet"></i>
 							</div>
 							<h3 class="alt-features-title font-alt">Agua
@@ -321,10 +319,10 @@
 
 					</div>
 					<div class="col-sm-6 col-md-6 col-lg-6">
-						<div class="alt-services-image align-center hidden-xs hidden-sm">
+						<div data-aos="zoom-out-up" data-aos-duration="1000"  data-aos-offset="300" class="alt-services-image align-center hidden-xs hidden-sm">
 							<img loading="lazy" style="border-radius: 10px;" src="assets/extra/faroandes_square.webp" alt="">
 						</div>
-						<div class="alt-features-item">
+						<div data-aos="fade-up" data-aos-duration="1000"  data-aos-offset="300" class="alt-features-item">
 							<div class="alt-features-icon"><i style="color: #8A2BE2;" class="fa-solid fa-star"></i>
 							</div>
 							<h3 class="alt-features-title font-alt">Eter</h3>Conexión e innovación. Investigamos en
@@ -333,14 +331,14 @@
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-3 col-lg-3">
-						<div class="alt-features-item" style="margin-top: 10px !important;">
+						<div data-aos="fade-left" data-aos-duration="1000"  data-aos-offset="300" class="alt-features-item" style="margin-top: 10px !important;">
 							<div class="alt-features-icon"><i style="color: #313131;" class="fa-solid fa-wind"></i>
 							</div>
 							<h3 class="alt-features-title font-alt">Aire</h3>Calidad del aire, salud y movilidad
 							sostenible. Investigamos la calidad del aire, sus efectos en la salud y desarrollamos
 							sistemas de transporte urbano sostenible para ciudades más saludables y habitables.
 						</div>
-						<div class="alt-features-item">
+						<div data-aos="fade-left" data-aos-duration="1000"  data-aos-offset="300" class="alt-features-item">
 							<div class="alt-features-icon"><i style="color: #FFA500;" class="fa-solid fa-fire"></i>
 							</div>
 							<h3 class="alt-features-title font-alt">Fuego</h3>Energía renovable y transformación.
@@ -367,7 +365,7 @@
 
 		<section class="module" id="services">
 			<div class="container">
-				<div class="row">
+				<div data-aos="zoom-out" data-aos-duration="1000"  class="row">
 					<div class="col-sm-8 col-sm-offset-2">
 						<h2 class="module-title font-alt">NOS ENCONTRAMOS BUSCANDO <br>
 							¿BUSCAMOS JUNTOS?</h2>
@@ -568,7 +566,7 @@
 					</div>
 				</div>
 				<div class="main-hexagon col d-flex mb-5 " style="--r:1.15;--h:0.5;--v:0.25;--s:200px">
-					<div class="container-hexagon ps-5 " id="dinamic-hexagons-container">
+					<div data-aos="zoom-out-up" data-aos-duration="1000" data-aos-offset="-100" class="container-hexagon ps-5 " id="dinamic-hexagons-container">
 						<!-- Carga de hexagonos -->
 					</div>
 				</div>
@@ -577,9 +575,9 @@
 		<section class="module" style="padding-bottom: 0px!important;" id="conecta-tu-talento">
 			<section class="module pt-0 pb-0" id="about">
 				<div class="row position-relative m-0">
-					<div class="col-xs-12 col-md-6 side-image"
+					<div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100" class="col-xs-12 col-md-6 side-image"
 						style="background-image: url('assets/extra/pluton.webp');"></div>
-					<div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
+					<div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="100" class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
 						<div class="row">
 							<div class="col-sm-12">
 								<h2 class="module-title font-alt align-left">Ser del nuevo mundo</h2>
@@ -696,13 +694,13 @@
 				<div class="card-container" style="padding-left: 20%;padding-right: 20%;">
 					<a target="_blank" href=" https://www.adetech-industrial.com/es/index.html"
 						class="card-link ms-3 me-3">
-						<div class="card-clientes">
+						<div data-aos="fade-right" data-aos-duration="1000" class="card-clientes">
 							<img loading="lazy" src="assets/extra/Logos/adetech-logo.png" alt="Card 2">
 
 						</div>
 					</a>
 					<a target="_blank" href="https://www.tech-novation.com/" class="card-link ms-3 me-3">
-						<div class="card-clientes">
+						<div  data-aos="fade-left" data-aos-duration="1000" class="card-clientes">
 							<img loading="lazy" src="assets/extra/Logos/tehchnovation-logo.webp" alt="Card 3">
 
 						</div>
@@ -790,8 +788,12 @@
 	<!-- <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script> -->
 	<script src="assets/js/plugins.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/text_reveal.js"></script>
 	<script src="assets/lib/components-font-awesome/js/fontawesome_kit.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

@@ -1,4 +1,4 @@
-.textarea {
+.textarea-container p{
 	margin-bottom: 4rem;
 	font-size: clamp(16px, 2vw, 24px);
 	padding: 0 5%;

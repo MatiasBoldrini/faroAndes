@@ -2494,6 +2494,9 @@ Google map
   .comment .comment {
     margin-left: 75px;
   }
+  .blurred{
+    min-width: 400px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2964,8 +2967,8 @@ Google map
   padding: 15px;
   border-radius: 20px;
   max-width: fit-content;
-  padding-left: 5%;
-  padding-right: 5%;
+  /* padding-left: 5%;
+  padding-right: 5%; */
   padding-top: 2%;
   padding-bottom: 2%;
   display: block;
