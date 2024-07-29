@@ -56,6 +56,7 @@ $title = htmlspecialchars($name);
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="blog-author bg-gray-200">
@@ -76,7 +77,8 @@ $title = htmlspecialchars($name);
                 <div class="row">
                     <div class="col-12 mx-auto">
 
-                        <div class="mt-n9 mt-md-n11 text-center" id="author-image-container">
+                        <div class="mt-n9 mt-md-n11 text-center" data-aos="zoom-in" data-aos-duration="1200"
+                            id="author-image-container">
 
                         </div>
                         <div class="row py-5">
@@ -96,7 +98,11 @@ $title = htmlspecialchars($name);
     </div>
     <script src="/assets/js/author.js"></script>
     <script src="/assets/lib/components-font-awesome/js/fontawesome_kit.js" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 
 </html>

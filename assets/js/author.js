@@ -41,7 +41,7 @@ function showEmployeeDetail() {
 								src="${talento.photo}" alt="foto_perfil" loading="lazy"></img>
                                 `;
         detailContainer.innerHTML = `
-                <h3 class="mb-0">${talento.name} <a href="${talento.linkedin}">
+                <h3 class="mb-0">${talento.name} <a target="_blank" href="${talento.linkedin}">
                       <i style="color: #0B65C2; margin-left:7px; font-size:25px;" class="fa-brands fa-linkedin"></i>
                     </a></h3>
 
