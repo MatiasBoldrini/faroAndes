@@ -294,8 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
         showYTLogo: false,
         useOnMobile: true,
         playOnlyIfVisible: true
-    }));
-
+    }))
     // Seleccionar el contenedor donde se agregará el nuevo div
     var container = document.querySelector('.home-section');
     
