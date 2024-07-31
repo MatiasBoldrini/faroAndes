@@ -77,7 +77,7 @@ $title = htmlspecialchars($name);
                 <div class="row">
                     <div class="col-12 mx-auto">
 
-                        <div class="mt-n9 mt-md-n11 text-center" data-aos="zoom-in" data-aos-duration="1200"
+                        <div class="mt-n9 mt-md-n11 text-center" data-aos="zoom-out-down" data-aos-duration="700"
                             id="author-image-container">
 
                         </div>
@@ -86,7 +86,8 @@ $title = htmlspecialchars($name);
                             <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto"
                                 id="talento-detail-container">
                             </div>
-                            <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
+                            <div data-aos="fade-up"
+                                class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
                                 <button class="mt-2 btn btn-outline-dark mb-0" id="btn-regresar"><i
                                         class="me-2 fa-solid fa-arrow-left"></i> Regresar</button>
                             </div>

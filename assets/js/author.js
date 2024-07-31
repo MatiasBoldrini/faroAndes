@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loadData();
 });
 document.getElementById('btn-regresar').addEventListener('click', function () {
-    if (document.referrer) {
+    console.log(document.referrer); // Esto mostrará la URL de la página anterior en la consola.
+    if (window.history.length > 1) {
         history.back();
     } else {
         window.location.href = 'https://www.faroandes.com/';
@@ -57,13 +58,13 @@ function showEmployeeDetail() {
                         if (areas_investigacion[area].pageName.includes('.')) {
                             htmlString = `
                                 <a target="_blank" href="${areas_investigacion[area].pageName}">
-                                    <span>${area} <i style="font-size:12px" class="fa-solid fa-arrow-up-right-from-square"></i> y </span>
+                                    <span>${area} <i style="font-size:12px" class="fa-solid fa-arrow-up-right-from-square"></i> , </span>
                                 </a>
                             `;
                         } else {
                             htmlString = `
                                 <a href="${areas_investigacion[area].pageName}.html">
-                                    <span>${area} <i style="font-size:12px" class="fa-solid fa-arrow-up-right-from-square"></i> y </span>
+                                    <span>${area} <i style="font-size:12px" class="fa-solid fa-arrow-up-right-from-square"></i> , </span>
                                 </a>
                             `;
                         }
@@ -74,7 +75,7 @@ function showEmployeeDetail() {
                 }).join('');
 
                 // Eliminar la última " y " del resultado
-                result = result.replace(/ y <\/span>(?=\s*<\/a>\s*$)/, '</span>');
+                result = result.replace(/ , <\/span>(?=\s*<\/a>\s*$)/, '</span>');
 
                 // Retornar el resultado modificado
                 return result;

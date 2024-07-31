@@ -78,7 +78,7 @@ $title = htmlspecialchars($name);
                 <div class="row">
                     <div class="col-12 mx-auto">
 
-                        <div class="mt-n9 mt-md-n11 text-center" data-aos="zoom-in" data-aos-duration="1200"
+                        <div class="mt-n9 mt-md-n11 text-center" data-aos="zoom-out-down" data-aos-duration="700"
                             id="author-image-container">
 
                         </div>

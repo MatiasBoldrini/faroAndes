@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loadData();
 });
 document.getElementById('btn-regresar').addEventListener('click', function () {
-    if (document.referrer) {
+    console.log(document.referrer); // Esto mostrará la URL de la página anterior en la consola.
+    if (window.history.length > 1) {
         history.back();
     } else {
         window.location.href = 'https://www.faroandes.com/en/';
@@ -33,15 +34,16 @@ document.getElementById('btn-regresar').addEventListener('click', function () {
 function showEmployeeDetail() {
     const talentoKey = getQueryParam('talento');
     const talento = talentos[talentoKey];
+    console.log(talento.photo);        
     if (talento) {
-        const detailContainer = document.getElementById('talento-detail-container');
+        const detailContainer = document.getElementById('talento-detail-container');    
         const imageContainer = document.getElementById('author-image-container');
         imageContainer.innerHTML = `
         <img style="object-fit: cover;" class="avatar  shadow-xl position-relative z-index-2"
 								src="${talento.photo}" alt="foto_perfil" loading="lazy"></img>
                                 `;
         detailContainer.innerHTML = `
-                <h3 class="mb-0">${talento.name} <a href="${talento.linkedin}">
+                <h3 class="mb-0">${talento.name} <a target="_blank" href="${talento.linkedin}">
                       <i style="color: #0B65C2; margin-left:7px; font-size:25px;" class="fa-brands fa-linkedin"></i>
                     </a></h3>
 
